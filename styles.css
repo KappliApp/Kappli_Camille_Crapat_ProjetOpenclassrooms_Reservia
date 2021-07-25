@@ -1,17 +1,20 @@
+/* ajout de la police */
 @font-face{
-    font-family: "Raleway";
-    src: url("/font/raleway-regular.ttf");
+    font-family: Raleway;
+    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-regular.ttf");
 }
 @font-face{
-    font-family: "Raleway Bold";
-    src: url("/font/raleway-bold.ttf");
+    font-family: Raleway;
+    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-bold.ttf");
+    font-weight: bold;
+
 }
 
-
+/* paramètre généraux */ 
 body{
     margin: 0;
     padding: 0;
-    font-family: "Raleway", Arial, sans-serif;
+    font-family: "Raleway";
 }
 a{
     text-decoration: none;
@@ -20,11 +23,15 @@ a{
 li{
     list-style-type: none;
 }
+header, nav ul, .search, .filter, .--filter, .location, .--lodging, .--activity, footer {
+    display: flex;
+}
+
+/* header : logo et menu */
 header{
     width: 90%;
     height: 100px;
     margin: auto;
-    display: flex;
     justify-content: space-between;
 }
 .logo{
@@ -34,17 +41,81 @@ header{
 .logo img{
     width: 100%;
 }
-nav ul{
-    display: flex;
-}
 
-section{
+
+/* Filtre + Recherche */ 
+.search-filter{
     width: 90%;
     margin: auto;
 }
+/* Résultat de recherche */
+.location{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.lodging{
+    width: 880px;
+}
+.lodging, .popular{
+    background-color: #F2F2F2;
+    height: 625px;
+    border-radius: 20px;
+}
+.--lodging{
+    justify-content: space-around;
+    flex-wrap: wrap;    
+}
+.lodging-figure{
+    background-color: #fff;
+    width: 245px;
+    height: 200px;
+    margin: 30px 30px 0 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.lodging-figure p{
+    font-size: 12px;
+    margin: 5px 0;
+}
+.lodging-figure h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.lodging-figure figcaption{
+    width: 215px;
+    height: 80px;
+    margin: auto;
+}
+.img-lodging{
+    width: 235px;
+    height: 115px;
+    overflow: hidden;
+    margin: 5px auto 0 auto;
+    border-radius: 20px 20px 0 0;
+}
+.fas.fa-star{
+    color: #0065FC;
+    font-size: 12px;
+}
+#star-gray{
+    color: #F2F2F2;
+}
+
+/* Les plus populaires */
+.popular{
+    width: 420px;
+}
+.popular-figure{
+    width: 345px;
+    height: 145px;
+    overflow: hidden;
+}
+
+/* footer */
 footer{
     background-color: #F2F2F2;
     width: 100%;
     height: 220px;
-    display: flex;
 }
