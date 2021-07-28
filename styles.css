@@ -41,12 +41,54 @@ header{
 .logo img{
     width: 100%;
 }
+nav ul li{
+    width: 160px;
+    height: 100px;
+    text-align: center;
+}
+nav ul li:hover{
+    border-top: 2px #0065FC solid;
+}
+nav ul li a{ 
+    display: inline-block;
+    vertical-align: middle;
+}
 
 
 /* Filtre + Recherche */ 
 .search-filter{
     width: 90%;
     margin: auto;
+}
+.map{
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+}
+.fas.fa-map-marker-alt{
+    font-size: 18px;
+    margin: auto;
+}
+.--search{
+    width: 230px;
+    height: 50px;
+    margin: 0;
+    padding: 0;    
+    font-weight: bold;
+    font-size: 16px;
+}
+.button-search{
+    background-color: #0065FC;
+    width: 130px;
+    height: 50px;
+    padding: 0;
+    border-radius: 0 10px 10px 0;
+    border: 0px ;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
 }
 /* Résultat de recherche */
 .location{
