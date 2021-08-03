@@ -41,11 +41,11 @@ header{ /* Contener header */
 .logo img{ /* réglage de la taille de l'image */
     width: 100%;
 }
-nav{
+nav{ /* Définition de la taille du menu */
     width: 33%;
     height: 6.25em;
 }
-nav ul{
+nav ul{ /* Suppression de la marge et du padding */
     margin: 0;
     padding: 0;
 }
@@ -55,55 +55,56 @@ nav ul li{ /* réglage bloc li menu */
     text-align: center;
     margin: auto;
 }
-nav ul li:hover{ /* survol bloc li du menu */
+nav ul li:hover{ /* ajout d'une bordure au survol de li */
     border-top: 0.125em #0065FC solid;
 }
-nav ul li a{  /* A REVOIR !!! - Centrer verticalement les liens du menu */
+nav ul li a{  /* Centrer verticalement les liens du menu */
     display: inline-block;
     width: 100%;
     height: 6.25em;
     margin: auto;
     line-height: 6.25em;
 }
-
+li.register a{ /* Différentiation register */
+    color: #0065FC;
+    font-weight: bold;
+}
 
 /* Filtre + Recherche */ 
-.search-filter{
+.search-filter{ /* contener Filtre + Recherche */
     width: 95%;
     margin: auto;
 }
-.search-filter h1{
+.search-filter h1{ /* titre contener */
     margin: 0;
 }
-.search-filter p{
+.search-filter p{ /* paragraphe contener */
     margin: 0.625em 0 1.562em 0;
 }
-.search{
+/* Recherche */
+.search{ /* contener recherche */
     width: 30%;
 }
-.map{
+.map{ /* contener icône map */
     background-color: #F2F2F2;
     width: 12%;
     height: 3.125em;
     border-radius: 0.625em 0 0 0.625em;
     text-align: center;
 }
-.map p{
+.map p{ /* paragraphe icône map */
     margin: 0;
     line-height: 3.125em;
 }
-.fas.fa-map-marker-alt{
-    display: inline-block;
-    font-size: 1.125em;
-    margin: auto;
+.fas.fa-map-marker-alt{ /* icône map */
+    font-size: 1.125em; 
 }
-form{
+form{ /* définition taille formulaire */
     width: 88%;
     margin: 0;
     padding: 0;
 }
-
-.--search{
+.--search{ /* input recherche */
     width: 60%;
     height: 3.125em;
     margin: 0;
@@ -112,7 +113,7 @@ form{
     font-weight: bold;
     font-size: 1.125em;
 }
-.button-search{
+.button-search{ /* boutton recherche */
     background-color: #0065FC;
     width: 35%;
     height: 3.125em;
@@ -124,16 +125,17 @@ form{
     font-weight: bold;
     font-size: 1em;
 }
-.button-search:hover{
+.button-search:hover{ /* paramètre survol boutton recherche */
     cursor: pointer;
 }
-.filter{
+/* Filtre */
+.filter{ /* contener filtre */
     margin: 1.875em 0 2.5em 0;
 }
-.filter h2{
+.filter h2{ /* titre contener */
     margin : auto 1.875em auto 0;
 }
-.--filter{
+.--filter{ /* sous contener filtre */
     height: 3.125em;
     border-radius: 3.125em 3.125em 3.125em 3.125em;
     border-top: 0.125em #F2F2F2 solid;
@@ -142,36 +144,30 @@ form{
     font-weight: bold;
     margin: 0 1.5625em 0 0;
 }
-.--filter p{
-    margin: auto 1.25em auto 0.725em;
-}
-.filter-img{
+.filter-img{ /* contener rond contenant icône */
     background-color: #DEEBFF;
     width: 50px;
     height: 50px;
     border-radius: 50px;
     text-align: center;
 }
-.filter-img .fas{
-    line-height: 3.125em;
-}
-.filter-img p{
+.filter-img p{ /* paragraphe icône */
     margin: auto;
 }
-.--filter .fas{
+.filter-img .fas{ /* icône */
+    color: #0065FC;
+    line-height: 3.125em;
+}
+.--filter p{ /* paragraphe icône et texte */
+    margin: auto 1.25em auto 0.725em;
+}
+p.info{ /* paragraphe info */
+    margin: 0.625em 0 2.5em 0;
+}
+.fas.fa-info-circle{ /* icône info */
     color: #0065FC;
 }
 
-.fas.fa-info-circle{
-    color: #0065FC;
-}
-p.info{
-    margin: 0.625em 0 2.5em 0;
-}
-li.register a{
-    color: #0065FC;
-    font-weight: bold;
-}
 /* Résultat de recherche */
 .location{
     width: 95%;
