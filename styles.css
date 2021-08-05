@@ -108,7 +108,8 @@ form{ /* définition taille formulaire */
     width: 60%;
     height: 3.125em;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    padding-left: 10px;
     border: 0px;  
     font-weight: bold;
     font-size: 1.125em;
@@ -143,6 +144,10 @@ form{ /* définition taille formulaire */
     border-bottom: 0.125em #F2F2F2 solid;
     font-weight: bold;
     margin: 0 1.5625em 0 0;
+}
+.--filter:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
 }
 .filter-img{ /* contener rond contenant icône */
     background-color: #DEEBFF;
@@ -291,116 +296,117 @@ p.info{ /* paragraphe info */
     margin: 1.25em;
 }
 
-.activity{
+/* Les Activités */
+.activity{ /* Contener activité */
     width: 95%;
     margin: auto;
 }
-.activity h2{
+.activity h2{ /* Titre */
     font-size: 1.375em;
     margin: 2.5em 0 1.875em 0;
 }
-.bloc-activity{
+.bloc-activity{ /* Bloc réunissant toutes les activités */
     width: 100%;
-    margin: 0 0 60px 0;
+    margin: 0 0 3.75em 0;
     display: flex;
     justify-content: space-between;
 }
-.--activity{
+.--activity{ /* Bloc réunissant la colone d'activité */
     width: 23%;
-    height: 445px;
+    height: 27.813em;
 }
-.--activity a, .--activity.small a{
+.--activity a, .--activity.small a{ /* Lien */
     width: 100%;
 }
-.activity a:hover{
+.activity a:hover{ /* Action au survol */
     transform: scale(1.05);
 }
-.--activity-small{
+.--activity-small{ /* Contener d'activité petit */
     width: 23%;
-    height: 445px;
+    height: 27.813em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.large{
+.large{ /* figure large */
     width: 100%;
     margin: 0;
-    border: 2px solid #F2F2F2;
+    border: 0.125em solid #F2F2F2;
     border-radius: 1.25em;
     box-shadow: 0.125em 0.125em 0.125em #F2F2F2;
     overflow: hidden;
 }
-.img-large{
+.img-large{ /* Bloc img large */
     width: 100%;
-    height: 390px;
+    height: 24.375em;
 }
-.activity img{
+.activity img{ /* toutes les images */
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.activity figcaption{
+.activity figcaption{ /* tous les figcaption */
     width: 100%;
-    height: 55px;
-    font-size: 14px;
+    height: 3.437em;
+    font-size: 0.875em;
     font-weight: bold;
-    line-height: 55px;
-    padding-left: 20px;
+    line-height: 3.437em;
+    padding-left: 1.25em;
 }
-.--small-medium{
+.--small-medium{ /* Figure small-medium */
     width: 100%;
-    height: 235px;
+    height: 14.687em;
     margin: 0;
-    border: 2px solid #F2F2F2;
+    border: 0.125em solid #F2F2F2;
     border-radius: 1.25em;
     box-shadow: 0.125em 0.125em 0.125em #F2F2F2;
     overflow: hidden;
 }
-.img-small-medium{
+.img-small-medium{ /* Bloc img small-medium */
     width: 100%;
-    height: 180px;
+    height: 11.25em;
 }
-.--small-small{
+.--small-small{ /* Figure small */
     width: 100%;
-    height: 165px;
+    height: 10.312em;
     margin: 0;
-    border: 2px solid #F2F2F2;
+    border: 0.125em solid #F2F2F2;
     border-radius: 1.25em;
     box-shadow: 0.125em 0.125em 0.125em #F2F2F2;
     overflow: hidden;
 }
-.img-small-small{
+.img-small-small{ /* Bloc img small */
     width: 100%;
-    height: 110px;
-}
-.--medium{
+    height: 6.875em;
+} 
+.--medium{ /* Figure medium */
     width: 100%;
-    height: 210px;
+    height: 13.125em;
     margin: 0;
-    border: 2px solid #F2F2F2;
+    border: 0.125em solid #F2F2F2;
     border-radius: 1.25em;
     box-shadow: 0.125em 0.125em 0.125em #F2F2F2;
     overflow: hidden;
 }
-.img-medium{
+.img-medium{ /* Bloc img medium */
     width: 100%;
-    height: 155px;
+    height: 9.687em;
 }
 /* footer */
 footer{
     background-color: #F2F2F2;
     width: 100%;
-    height: 220px;
+    height: 13.75em;
 }
 .--footer{
     width: 90%;
     margin: auto;
 }
 .--footer h2{
-    margin: 45px auto 30px;
+    margin: 45px auto 25px;
 }
 .--footer .about ul li{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .about{
     margin: 0 220px 0 0;
