@@ -1,4 +1,3 @@
-@media screen and (min-width: 1280px) {
     /* ajout de la police */
 @font-face{ /* Ajout de la police Raleway Régular */
     font-family: Raleway;
@@ -8,9 +7,8 @@
     font-family: Raleway;
     src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-bold.ttf");
     font-weight: bold;
-
+    
 }
-
 /* paramètre généraux */ 
 body{ /* réglage margin padding et font-family de la page */
     margin: 0;
@@ -24,800 +22,545 @@ a{ /* suppression text decoration et couleur lien */
 li{ /* suppression des puces sur les listes de la page */
     list-style-type: none;
 }
-header, nav ul, .search, .filter, .--filter, .location, .--lodging, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
-    display: flex;
+
+@media screen and (min-width: 1280px) {
+    header, nav ul, .search, .filter, .--filter, .location, .--lodging, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
+        display: flex;
+    }
+    
+    /* header : logo et menu */
+    header{ /* Contener header */
+        width: 95%;
+        height: 6.25em;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .logo{ /* bloc logo */
+        width: 7%;
+        margin: auto 0;
+    }
+    .logo img{ /* réglage de la taille de l'image */
+        width: 100%;
+    }
+    nav{ /* Définition de la taille du menu */
+        width: 33%;
+        height: 6.25em;
+    }
+    nav ul{ /* Suppression de la marge et du padding */
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li{ /* réglage bloc li menu */
+        width: 33%;
+        height: 6.25em;
+        text-align: center;
+        margin: auto;
+    }
+    nav ul li:hover{ /* ajout d'une bordure au survol de li */
+        border-top: 0.125em #0065FC solid;
+    }
+    nav ul li a{  /* Centrer verticalement les liens du menu */
+        display: inline-block;
+        width: 100%;
+        height: 6.25em;
+        margin: auto;
+        line-height: 6.25em;
+    }
+    li.register a{ /* Différentiation register */
+        color: #0065FC;
+        font-weight: bold;
+    }
+    
+    /* Filtre + Recherche */ 
+    .search-filter{ /* contener Filtre + Recherche */
+        width: 95%;
+        margin: auto;
+    }
+    .search-filter h1{ /* titre contener */
+        margin: 0;
+    }
+    .search-filter p{ /* paragraphe contener */
+        margin: 0.625em 0 1.562em 0;
+    }
+    /* Recherche */
+    .search{ /* contener recherche */
+        width: 30%;
+    }
+    .map{ /* contener icône map */
+        background-color: #F2F2F2;
+        width: 12%;
+        height: 3.125em;
+        border-radius: 0.625em 0 0 0.625em;
+        text-align: center;
+    }
+    .map p{ /* paragraphe icône map */
+        margin: 0;
+        line-height: 3.125em;
+    }
+    .fas.fa-map-marker-alt{ /* icône map */
+        font-size: 1.125em; 
+    }
+    form{ /* définition taille formulaire */
+        width: 88%;
+        margin: 0;
+        padding: 0;
+    }
+    .--search{ /* input recherche */
+        width: 60%;
+        height: 3.125em;
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        border: 0px;  
+        font-weight: bold;
+        font-size: 1.125em;
+    }
+    .button-search{ /* boutton recherche */
+        background-color: #0065FC;
+        width: 35%;
+        height: 3.125em;
+        margin: 0;
+        padding: 0;
+        border-radius: 0 0.625em 0.625em 0; 
+        border: 0px ;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .button-search:hover{ /* paramètre survol boutton recherche */
+        cursor: pointer;
+    }
+    /* Filtre */
+    .filter{ /* contener filtre */
+        margin: 1.875em 0 2.5em 0;
+    }
+    .filter h2{ /* titre contener */
+        margin : auto 1.875em auto 0;
+    }
+    .--filter{ /* sous contener filtre */
+        height: 3.125em;
+        border-radius: 3.125em 3.125em 3.125em 3.125em;
+        border-top: 0.125em #F2F2F2 solid;
+        border-right: 0.125em #F2F2F2 solid;
+        border-bottom: 0.125em #F2F2F2 solid;
+        font-weight: bold;
+        margin: 0 1.5625em 0 0;
+    }
+    .--filter:hover{
+        background-color: #DEEBFF;
+        cursor: pointer;
+    }
+    .filter-img{ /* contener rond contenant icône */
+        background-color: #DEEBFF;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    .--filter .filter-img p{ /* paragraphe icône */
+        margin: auto;
+    }
+    .filter-img .fas{ /* icône */
+        color: #0065FC;
+        line-height: 3.125em;
+    }
+    .--filter p{ /* paragraphe icône et texte */
+        margin: auto 1.25em auto 0.725em;
+    }
+    p.info{ /* paragraphe info */
+        margin: 0.625em 0 2.5em 0;
+    }
+    .fas.fa-info-circle{ /* icône info */
+        color: #0065FC;
+    }
+    
+    /* Résultat de recherche */
+    .location{ /* Contener contenant lodging et popular */
+        width: 95%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .lodging{ /* Définition de la largeur du contener lodging */
+        width: 63%;
+    }
+    .lodging h2{ /* Gros titre lodging */
+        font-size: 1.375em;
+        margin: 2.5em 0 1.875em 1.875em;
+    }
+    .lodging h3{ /* Titre lodging */
+        font-size: 1.125em;
+        margin: 0 0 2.5em 1.875em;
+    }
+    .lodging, .popular{ /* contener lodging + popular */
+        background-color: #F2F2F2;
+        border-radius: 1.25em;
+    }
+    .--lodging{ /* sous-contener lodging contenant tous les logements */
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .--lodging a{ /* lien entourant les lodging figure */
+        display: inline-block;
+        width: 28%;
+    }
+    .--lodging a:hover{ /* agrandi le bloc au survol */
+        transform: scale(1.05);
+    }
+    .lodging-figure{ /* bloc unitaire contenant image + texte de chaque logement */
+        background-color: #fff;
+        width: 100%;
+        height: 12.5em;
+        margin: 0 auto 2.5em auto;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #cbcbcb;
+        overflow: hidden;
+    }
+    .img-lodging{ /* Bloc contenant l'image du logement */
+        width: 97%;
+        height: 7.188em;
+        overflow: hidden;
+        margin: 0.313em auto 0 auto;
+        border-radius: 1.25em 1.25em 0 0;
+    }
+    .img-lodging img{ /* Paramètre de l'image */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .lodging-figure p, .popular-figure p{ /* Paramètre paragraphe lodging et popular */
+        font-size: 12px;
+        margin: 0.312em 0;
+    }
+    .lodging-figure h3, .popular h3{ /* Paramètre titre lodging et popular */
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0.312em 0;
+    }
+    .lodging-figure figcaption{ /* Paramètre texte en dessous des images de logements */
+        width: 92%;
+        height: 5em;
+        margin: auto;
+    }
+    .fas.fa-star{ /* étoile de notation */
+        color: #0065FC;
+        font-size: 12px;
+    }
+    .fas.fa-star.star-gray{ /* étoile de notation grisé */
+        color: #F2F2F2;
+    }
+    
+    /* Les plus populaires */
+    .popular{
+        width: 33%;
+    }
+    .popular h2{ /* Paramètre titre popular */
+        font-size: 1.375em;
+        margin: 2.5em 0 1.875em 1.875em;
+    }
+    .--popular{
+        width: 80%;
+        margin: auto auto 0 auto;
+        padding: 0;
+    }
+    .--popular a{
+        display: inline-block;
+        width: 100%;
+    }
+    .popular a:hover{
+        transform: scale(1.05);
+    }
+    .popular-figure{
+        background-color: #fff;
+        width: 100%;
+        height: 9.062em;
+        margin: 0 auto 2.5em auto;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #cbcbcb;
+        overflow: hidden;
+        display: flex;
+    }
+    .img-popular{
+        width: 40%;
+        height: 8.437em;
+        overflow: hidden;
+        margin: 0.312em 0 0.312em 0.312em;
+        border-radius: 1.25em 0 0 1.25em;
+    }
+    .img-popular img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .popular-figure figcaption{
+        width: 60%;
+        margin: 1.25em;
+    }
+    
+    /* Les Activités */
+    .activity{ /* Contener activité */
+        width: 95%;
+        margin: auto;
+    }
+    .activity h2{ /* Titre */
+        font-size: 1.375em;
+        margin: 2.5em 0 1.875em 0;
+    }
+    .bloc-activity{ /* Bloc réunissant toutes les activités */
+        width: 100%;
+        margin: 0 0 3.75em 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .--activity{ /* Bloc réunissant la colone d'activité */
+        width: 23%;
+        height: 27.813em;
+    }
+    .--activity a, .--activity.small a{ /* Lien */
+        width: 100%;
+    }
+    .activity a:hover{ /* Action au survol */
+        transform: scale(1.05);
+    }
+    .--activity-small{ /* Contener d'activité petit */
+        width: 23%;
+        height: 27.813em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .large{ /* figure large */
+        width: 100%;
+        margin: 0;
+        border: 0.125em solid #F2F2F2;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #e5e4e4;
+        overflow: hidden;
+    }
+    .img-large{ /* Bloc img large */
+        width: 100%;
+        height: 24.375em;
+    }
+    .activity img{ /* toutes les images */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activity figcaption{ /* tous les figcaption */
+        width: 100%;
+        height: 3.437em;
+        font-size: 0.875em;
+        font-weight: bold;
+        line-height: 3.437em;
+        padding-left: 1.25em;
+    }
+    .medium{ /* Figure medium */
+        width: 100%;
+        height: 14.687em;
+        margin: 0;
+        border: 0.125em solid #F2F2F2;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #e5e4e4;
+        overflow: hidden;
+    }
+    .img-medium{ /* Bloc img medium */
+        width: 100%;
+        height: 11.25em;
+    }
+    .small{ /* Figure small */
+        width: 100%;
+        height: 10.312em;
+        margin: 0;
+        border: 0.125em solid #F2F2F2;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #e5e4e4;
+        overflow: hidden;
+    }
+    .img-small{ /* Bloc img small */
+        width: 100%;
+        height: 6.875em;
+    }
+    /* footer */
+    footer{
+        background-color: #F2F2F2;
+        width: 100%;
+        height: 13.75em;
+    }
+    .--footer{
+        width: 90%;
+        margin: auto;
+    }
+    .--footer h2{
+        margin: 45px auto 25px;
+    }
+    .--footer .about ul li{
+        margin-bottom: 15px;
+    }
+    .about{
+        margin: 0 220px 0 0;
+    }
+    footer ul{
+        margin: 0;
+        padding: 0;
+    }
 }
 
-/* header : logo et menu */
-header{ /* Contener header */
-    width: 95%;
-    height: 6.25em;
-    margin: auto;
-    justify-content: space-between;
-}
-.logo{ /* bloc logo */
-    width: 7%;
-    margin: auto 0;
-}
-.logo img{ /* réglage de la taille de l'image */
-    width: 100%;
-}
-nav{ /* Définition de la taille du menu */
-    width: 33%;
-    height: 6.25em;
-}
-nav ul{ /* Suppression de la marge et du padding */
-    margin: 0;
-    padding: 0;
-}
-nav ul li{ /* réglage bloc li menu */
-    width: 33%;
-    height: 6.25em;
-    text-align: center;
-    margin: auto;
-}
-nav ul li:hover{ /* ajout d'une bordure au survol de li */
-    border-top: 0.125em #0065FC solid;
-}
-nav ul li a{  /* Centrer verticalement les liens du menu */
-    display: inline-block;
-    width: 100%;
-    height: 6.25em;
-    margin: auto;
-    line-height: 6.25em;
-}
-li.register a{ /* Différentiation register */
-    color: #0065FC;
-    font-weight: bold;
-}
-
-/* Filtre + Recherche */ 
-.search-filter{ /* contener Filtre + Recherche */
-    width: 95%;
-    margin: auto;
-}
-.search-filter h1{ /* titre contener */
-    margin: 0;
-}
-.search-filter p{ /* paragraphe contener */
-    margin: 0.625em 0 1.562em 0;
-}
-/* Recherche */
-.search{ /* contener recherche */
-    width: 30%;
-}
-.map{ /* contener icône map */
-    background-color: #F2F2F2;
-    width: 12%;
-    height: 3.125em;
-    border-radius: 0.625em 0 0 0.625em;
-    text-align: center;
-}
-.map p{ /* paragraphe icône map */
-    margin: 0;
-    line-height: 3.125em;
-}
-.fas.fa-map-marker-alt{ /* icône map */
-    font-size: 1.125em; 
-}
-form{ /* définition taille formulaire */
-    width: 88%;
-    margin: 0;
-    padding: 0;
-}
-.--search{ /* input recherche */
-    width: 60%;
-    height: 3.125em;
-    margin: 0;
-    padding: 0;
-    padding-left: 10px;
-    border: 0px;  
-    font-weight: bold;
-    font-size: 1.125em;
-}
-.button-search{ /* boutton recherche */
-    background-color: #0065FC;
-    width: 35%;
-    height: 3.125em;
-    margin: 0;
-    padding: 0;
-    border-radius: 0 0.625em 0.625em 0; 
-    border: 0px ;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1em;
-}
-.button-search:hover{ /* paramètre survol boutton recherche */
-    cursor: pointer;
-}
-/* Filtre */
-.filter{ /* contener filtre */
-    margin: 1.875em 0 2.5em 0;
-}
-.filter h2{ /* titre contener */
-    margin : auto 1.875em auto 0;
-}
-.--filter{ /* sous contener filtre */
-    height: 3.125em;
-    border-radius: 3.125em 3.125em 3.125em 3.125em;
-    border-top: 0.125em #F2F2F2 solid;
-    border-right: 0.125em #F2F2F2 solid;
-    border-bottom: 0.125em #F2F2F2 solid;
-    font-weight: bold;
-    margin: 0 1.5625em 0 0;
-}
-.--filter:hover{
-    background-color: #DEEBFF;
-    cursor: pointer;
-}
-.filter-img{ /* contener rond contenant icône */
-    background-color: #DEEBFF;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    text-align: center;
-}
-.--filter .filter-img p{ /* paragraphe icône */
-    margin: auto;
-}
-.filter-img .fas{ /* icône */
-    color: #0065FC;
-    line-height: 3.125em;
-}
-.--filter p{ /* paragraphe icône et texte */
-    margin: auto 1.25em auto 0.725em;
-}
-p.info{ /* paragraphe info */
-    margin: 0.625em 0 2.5em 0;
-}
-.fas.fa-info-circle{ /* icône info */
-    color: #0065FC;
-}
-
-/* Résultat de recherche */
-.location{ /* Contener contenant lodging et popular */
-    width: 95%;
-    margin: auto;
-    justify-content: space-between;
-}
-.lodging{ /* Définition de la largeur du contener lodging */
-    width: 63%;
-}
-.lodging h2{ /* Gros titre lodging */
-    font-size: 1.375em;
-    margin: 2.5em 0 1.875em 1.875em;
-}
-.lodging h3{ /* Titre lodging */
-    font-size: 1.125em;
-    margin: 0 0 2.5em 1.875em;
-}
-.lodging, .popular{ /* contener lodging + popular */
-    background-color: #F2F2F2;
-    border-radius: 1.25em;
-}
-.--lodging{ /* sous-contener lodging contenant tous les logements */
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.--lodging a{ /* lien entourant les lodging figure */
-    display: inline-block;
-    width: 28%;
-}
-.--lodging a:hover{ /* agrandi le bloc au survol */
-    transform: scale(1.05);
-}
-.lodging-figure{ /* bloc unitaire contenant image + texte de chaque logement */
-    background-color: #fff;
-    width: 100%;
-    height: 12.5em;
-    margin: 0 auto 2.5em auto;
-    border-radius: 1.25em;
-    box-shadow: 0px 6px 6px #cbcbcb;
-    overflow: hidden;
-}
-.img-lodging{ /* Bloc contenant l'image du logement */
-    width: 97%;
-    height: 7.188em;
-    overflow: hidden;
-    margin: 0.313em auto 0 auto;
-    border-radius: 1.25em 1.25em 0 0;
-}
-.img-lodging img{ /* Paramètre de l'image */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.lodging-figure p, .popular-figure p{ /* Paramètre paragraphe lodging et popular */
-    font-size: 12px;
-    margin: 0.312em 0;
-}
-.lodging-figure h3, .popular h3{ /* Paramètre titre lodging et popular */
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0.312em 0;
-}
-.lodging-figure figcaption{ /* Paramètre texte en dessous des images de logements */
-    width: 92%;
-    height: 5em;
-    margin: auto;
-}
-.fas.fa-star{ /* étoile de notation */
-    color: #0065FC;
-    font-size: 12px;
-}
-.fas.fa-star.star-gray{ /* étoile de notation grisé */
-    color: #F2F2F2;
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header, nav ul, .search, .filter, .--filter, .--lodging, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
+        display: flex;
+    }
+    
+    /* header : logo et menu */
+    header{ /* Contener header */
+        width: 95%;
+        height: 6.25em;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .logo{ /* bloc logo */
+        width: 7%;
+        margin: auto 0;
+    }
+    .logo img{ /* réglage de la taille de l'image */
+        width: 100%;
+    }
+    nav{ /* Définition de la taille du menu */
+        width: 33%;
+        height: 6.25em;
+    }
+    nav ul{ /* Suppression de la marge et du padding */
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li{ /* réglage bloc li menu */
+        width: 33%;
+        height: 6.25em;
+        text-align: center;
+        margin: auto;
+    }
+    nav ul li:hover{ /* ajout d'une bordure au survol de li */
+        border-top: 0.125em #0065FC solid;
+    }
+    nav ul li a{  /* Centrer verticalement les liens du menu */
+        display: inline-block;
+        width: 100%;
+        height: 6.25em;
+        margin: auto;
+        line-height: 6.25em;
+    }
+    li.register a{ /* Différentiation register */
+        color: #0065FC;
+        font-weight: bold;
+    }
+        /* Les Activités */
+    .activity{ /* Contener activité */
+        width: 95%;
+        margin: auto;
+    }
+    .activity h2{ /* Titre */
+        font-size: 1.375em;
+        margin: 2.5em 0 1.875em 0;
+    }
+    .bloc-activity{ /* Bloc réunissant toutes les activités */
+        width: 100%;
+        margin: 0 0 3.75em 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .--activity{ /* Bloc réunissant la colone d'activité */
+        width: 23%;
+        height: 27.813em;
+    }
+    .--activity a, .--activity.small a{ /* Lien */
+        width: 100%;
+    }
+    .activity a:hover{ /* Action au survol */
+        transform: scale(1.05);
+    }
+    .--activity-small{ /* Contener d'activité petit */
+        width: 23%;
+        height: 27.813em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .large{ /* figure large */
+        width: 100%;
+        margin: 0;
+        border: 0.125em solid #F2F2F2;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #e5e4e4;
+        overflow: hidden;
+    }
+    .img-large{ /* Bloc img large */
+        width: 100%;
+        height: 24.375em;
+    }
+    .activity img{ /* toutes les images */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activity figcaption{ /* tous les figcaption */
+        width: 100%;
+        height: 3.437em;
+        font-size: 0.875em;
+        font-weight: bold;
+        line-height: 3.437em;
+        padding-left: 1.25em;
+    }
+    .medium{ /* Figure medium */
+        width: 100%;
+        height: 14.687em;
+        margin: 0;
+        border: 0.125em solid #F2F2F2;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #e5e4e4;
+        overflow: hidden;
+    }
+    .img-medium{ /* Bloc img medium */
+        width: 100%;
+        height: 11.25em;
+    }
+    .small{ /* Figure small */
+        width: 100%;
+        height: 10.312em;
+        margin: 0;
+        border: 0.125em solid #F2F2F2;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #e5e4e4;
+        overflow: hidden;
+    }
+    .img-small{ /* Bloc img small */
+        width: 100%;
+        height: 6.875em;
+    }
+    /* footer */
+    footer{
+        background-color: #F2F2F2;
+        width: 100%;
+        height: 13.75em;
+    }
+    .--footer{
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .--footer h2{
+        margin: 45px auto 20px;
+    }
+    .--footer .about ul li{
+        margin-bottom: 15px;
+    }
+    .about{
+        width: 28%;
+    }
+    footer ul{
+        margin: 0;
+        padding: 0;
+    }
 }
 
-/* Les plus populaires */
-.popular{
-    width: 33%;
-}
-.popular h2{ /* Paramètre titre popular */
-    font-size: 1.375em;
-    margin: 2.5em 0 1.875em 1.875em;
-}
-.--popular{
-    width: 80%;
-    margin: auto auto 0 auto;
-    padding: 0;
-}
-.--popular a{
-    display: inline-block;
-    width: 100%;
-}
-.popular a:hover{
-    transform: scale(1.05);
-}
-.popular-figure{
-    background-color: #fff;
-    width: 100%;
-    height: 9.062em;
-    margin: 0 auto 2.5em auto;
-    border-radius: 1.25em;
-    box-shadow: 0px 6px 6px #cbcbcb;
-    overflow: hidden;
-    display: flex;
-}
-.img-popular{
-    width: 40%;
-    height: 8.437em;
-    overflow: hidden;
-    margin: 0.312em 0 0.312em 0.312em;
-    border-radius: 1.25em 0 0 1.25em;
-}
-.img-popular img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.popular-figure figcaption{
-    width: 60%;
-    margin: 1.25em;
-}
-
-/* Les Activités */
-.activity{ /* Contener activité */
-    width: 95%;
-    margin: auto;
-}
-.activity h2{ /* Titre */
-    font-size: 1.375em;
-    margin: 2.5em 0 1.875em 0;
-}
-.bloc-activity{ /* Bloc réunissant toutes les activités */
-    width: 100%;
-    margin: 0 0 3.75em 0;
-    display: flex;
-    justify-content: space-between;
-}
-.--activity{ /* Bloc réunissant la colone d'activité */
-    width: 23%;
-    height: 27.813em;
-}
-.--activity a, .--activity.small a{ /* Lien */
-    width: 100%;
-}
-.activity a:hover{ /* Action au survol */
-    transform: scale(1.05);
-}
-.--activity-small{ /* Contener d'activité petit */
-    width: 23%;
-    height: 27.813em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.large{ /* figure large */
-    width: 100%;
-    margin: 0;
-    border: 0.125em solid #F2F2F2;
-    border-radius: 1.25em;
-    box-shadow: 0px 6px 6px #e5e4e4;
-    overflow: hidden;
-}
-.img-large{ /* Bloc img large */
-    width: 100%;
-    height: 24.375em;
-}
-.activity img{ /* toutes les images */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.activity figcaption{ /* tous les figcaption */
-    width: 100%;
-    height: 3.437em;
-    font-size: 0.875em;
-    font-weight: bold;
-    line-height: 3.437em;
-    padding-left: 1.25em;
-}
-.medium{ /* Figure medium */
-    width: 100%;
-    height: 14.687em;
-    margin: 0;
-    border: 0.125em solid #F2F2F2;
-    border-radius: 1.25em;
-    box-shadow: 0px 6px 6px #e5e4e4;
-    overflow: hidden;
-}
-.img-medium{ /* Bloc img medium */
-    width: 100%;
-    height: 11.25em;
-}
-.small{ /* Figure small */
-    width: 100%;
-    height: 10.312em;
-    margin: 0;
-    border: 0.125em solid #F2F2F2;
-    border-radius: 1.25em;
-    box-shadow: 0px 6px 6px #e5e4e4;
-    overflow: hidden;
-}
-.img-small{ /* Bloc img small */
-    width: 100%;
-    height: 6.875em;
-}
-/* footer */
-footer{
-    background-color: #F2F2F2;
-    width: 100%;
-    height: 13.75em;
-}
-.--footer{
-    width: 90%;
-    margin: auto;
-}
-.--footer h2{
-    margin: 45px auto 25px;
-}
-.--footer .about ul li{
-    margin-bottom: 15px;
-}
-.about{
-    margin: 0 220px 0 0;
-}
-footer ul{
-    margin: 0;
-    padding: 0;
-}
-}
-@media screen and (min-width: 480px) and (max-width: 1280px){
- /* ajout de la police */
- @font-face{ /* Ajout de la police Raleway Régular */
-    font-family: Raleway;
-    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-regular.ttf");
-}
-@font-face{ /* Ajout de la police Raleway Bold */
-    font-family: Raleway;
-    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-bold.ttf");
-    font-weight: bold;
-
-}
-
-/* paramètre généraux */ 
-body{ /* réglage margin padding et font-family de la page */
-    margin: 0;
-    padding: 0;
-    font-family: "Raleway";
-}
-a{ /* suppression text decoration et couleur lien */
-    text-decoration: none;
-    color: #000;
-}
-li{ /* suppression des puces sur les listes de la page */
-    list-style-type: none;
-}
-header, nav ul, .search, .filter, .--filter,  .--lodging, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
-    display: flex;
-}
-
-/* header : logo et menu */
-header{ /* Contener header */
-    width: 95%;
-    height: 6.25em;
-    margin: auto;
-    justify-content: space-between;
-}
-.logo{ /* bloc logo */
-    width: 7%;
-    margin: auto 0;
-}
-.logo img{ /* réglage de la taille de l'image */
-    width: 100%;
-}
-nav{ /* Définition de la taille du menu */
-    width: 33%;
-    height: 6.25em;
-}
-nav ul{ /* Suppression de la marge et du padding */
-    margin: 0;
-    padding: 0;
-}
-nav ul li{ /* réglage bloc li menu */
-    width: 33%;
-    height: 6.25em;
-    text-align: center;
-    margin: auto;
-}
-nav ul li:hover{ /* ajout d'une bordure au survol de li */
-    border-top: 0.125em #0065FC solid;
-}
-nav ul li a{  /* Centrer verticalement les liens du menu */
-    display: inline-block;
-    width: 100%;
-    height: 6.25em;
-    margin: auto;
-    line-height: 6.25em;
-}
-li.register a{ /* Différentiation register */
-    color: #0065FC;
-    font-weight: bold;
-}
-/* Filtre + Recherche */ 
-.search-filter{ /* contener Filtre + Recherche */
-    width: 95%;
-    margin: auto;
-}
-.search-filter h1{ /* titre contener */
-    margin: 0;
-}
-.search-filter p{ /* paragraphe contener */
-    margin: 0.625em 0 1.562em 0;
-}
-/* Recherche */
-.search{ /* contener recherche */
-    width: 30%;
-}
-.map{ /* contener icône map */
-    background-color: #F2F2F2;
-    width: 12%;
-    height: 3.125em;
-    border-radius: 0.625em 0 0 0.625em;
-    text-align: center;
-}
-.map p{ /* paragraphe icône map */
-    margin: 0;
-    line-height: 3.125em;
-}
-.fas.fa-map-marker-alt{ /* icône map */
-    font-size: 1.125em; 
-}
-form{ /* définition taille formulaire */
-    width: 88%;
-    margin: 0;
-    padding: 0;
-}
-.--search{ /* input recherche */
-    width: 60%;
-    height: 3.125em;
-    margin: 0;
-    padding: 0;
-    padding-left: 10px;
-    border: 0px;  
-    font-weight: bold;
-    font-size: 1.125em;
-}
-.button-search{ /* boutton recherche */
-    background-color: #0065FC;
-    width: 35%;
-    height: 3.125em;
-    margin: 0;
-    padding: 0;
-    border-radius: 0 0.625em 0.625em 0; 
-    border: 0px ;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1em;
-}
-.button-search:hover{ /* paramètre survol boutton recherche */
-    cursor: pointer;
-}
-/* Filtre */
-.filter{ /* contener filtre */
-    margin: 1.875em 0 2.5em 0;
-}
-.filter h2{ /* titre contener */
-    margin : auto 1.875em auto 0;
-}
-.--filter{ /* sous contener filtre */
-    height: 3.125em;
-    border-radius: 3.125em 3.125em 3.125em 3.125em;
-    border-top: 0.125em #F2F2F2 solid;
-    border-right: 0.125em #F2F2F2 solid;
-    border-bottom: 0.125em #F2F2F2 solid;
-    font-weight: bold;
-    margin: 0 1.5625em 0 0;
-}
-.--filter:hover{
-    background-color: #DEEBFF;
-    cursor: pointer;
-}
-.filter-img{ /* contener rond contenant icône */
-    background-color: #DEEBFF;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    text-align: center;
-}
-.--filter .filter-img p{ /* paragraphe icône */
-    margin: auto;
-}
-.filter-img .fas{ /* icône */
-    color: #0065FC;
-    line-height: 3.125em;
-}
-.--filter p{ /* paragraphe icône et texte */
-    margin: auto 1.25em auto 0.725em;
-}
-p.info{ /* paragraphe info */
-    margin: 0.625em 0 2.5em 0;
-}
-.fas.fa-info-circle{ /* icône info */
-    color: #0065FC;
-}
-/* Résultat de recherche */
-.location{ /* Contener contenant lodging et popular */
-    width: 90%;
-    margin: auto;
-    justify-content: space-between;
-}
-.lodging{ /* Définition de la largeur du contener lodging */
-    width: 100%;
-}
-.lodging h2{ /* Gros titre lodging */
-    font-size: 1.375em;
-    margin: 2.5em 0 1.875em 1.875em;
-}
-.lodging h3{ /* Titre lodging */
-    font-size: 1.125em;
-    margin: 0 0 2.5em 1.875em;
-}
-.lodging, .popular{ /* contener lodging + popular */
-    background-color: #F2F2F2;
-    border-radius: 1.25em;
-}
-.--lodging{ /* sous-contener lodging contenant tous les logements */
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.--lodging a{ /* lien entourant les lodging figure */
-    display: inline-block;
-    width: 28%;
-}
-.--lodging a:hover{ /* agrandi le bloc au survol */
-    transform: scale(1.05);
-}
-.lodging-figure{ /* bloc unitaire contenant image + texte de chaque logement */
-    background-color: #fff;
-    width: 100%;
-    height: 12.5em;
-    margin: 0 auto 2.5em auto;
-    border-radius: 1.25em;
-    box-shadow: 0.062em 0.062em 0.062em #000;
-    overflow: hidden;
-}
-.img-lodging{ /* Bloc contenant l'image du logement */
-    width: 97%;
-    height: 7.188em;
-    overflow: hidden;
-    margin: 0.313em auto 0 auto;
-    border-radius: 1.25em 1.25em 0 0;
-}
-.img-lodging img{ /* Paramètre de l'image */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.lodging-figure p, .popular-figure p{ /* Paramètre paragraphe lodging et popular */
-    font-size: 12px;
-    margin: 0.312em 0;
-}
-.lodging-figure h3, .popular h3{ /* Paramètre titre lodging et popular */
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0.312em 0;
-}
-.lodging-figure figcaption{ /* Paramètre texte en dessous des images de logements */
-    width: 92%;
-    height: 5em;
-    margin: auto;
-}
-.fas.fa-star{ /* étoile de notation */
-    color: #0065FC;
-    font-size: 12px;
-}
-.fas.fa-star.star-gray{ /* étoile de notation grisé */
-    color: #F2F2F2;
-}
-
-/* Les plus populaires */
-.popular{
-    width: 33%;
-}
-.popular h2{ /* Paramètre titre popular */
-    font-size: 1.375em;
-    margin: 2.5em 0 1.875em 1.875em;
-}
-.--popular{
-    width: 80%;
-    margin: auto auto 0 auto;
-    padding: 0;
-}
-.--popular a{
-    display: inline-block;
-    width: 100%;
-}
-.popular a:hover{
-    transform: scale(1.05);
-}
-.popular-figure{
-    background-color: #fff;
-    width: 100%;
-    height: 9.062em;
-    margin: 0 auto 2.5em auto;
-    border-radius: 1.25em;
-    box-shadow: 0.062em 0.062em 0.062em #000;
-    overflow: hidden;
-    display: flex;
-}
-.img-popular{
-    width: 40%;
-    height: 8.437em;
-    overflow: hidden;
-    margin: 0.312em 0 0.312em 0.312em;
-    border-radius: 1.25em 0 0 1.25em;
-}
-.img-popular img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.popular-figure figcaption{
-    width: 60%;
-    margin: 1.25em;
-}
-
-/* Les Activités */
-.activity{ /* Contener activité */
-    width: 95%;
-    margin: auto;
-}
-.activity h2{ /* Titre */
-    font-size: 1.375em;
-    margin: 2.5em 0 1.875em 0;
-}
-.bloc-activity{ /* Bloc réunissant toutes les activités */
-    width: 100%;
-    margin: 0 0 3.75em 0;
-    display: flex;
-    justify-content: space-between;
-}
-.--activity{ /* Bloc réunissant la colone d'activité */
-    width: 23%;
-    height: 27.813em;
-}
-.--activity a, .--activity.small a{ /* Lien */
-    width: 100%;
-}
-.activity a:hover{ /* Action au survol */
-    transform: scale(1.05);
-}
-.--activity-small{ /* Contener d'activité petit */
-    width: 23%;
-    height: 27.813em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.large{ /* figure large */
-    width: 100%;
-    margin: 0;
-    border: 0.125em solid #F2F2F2;
-    border-radius: 1.25em;
-    box-shadow: 0.125em 0.125em 0.125em #F2F2F2;
-    overflow: hidden;
-}
-.img-large{ /* Bloc img large */
-    width: 100%;
-    height: 24.375em;
-}
-.activity img{ /* toutes les images */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.activity figcaption{ /* tous les figcaption */
-    width: 100%;
-    height: 3.437em;
-    font-size: 0.875em;
-    font-weight: bold;
-    line-height: 3.437em;
-    padding-left: 1.25em;
-}
-.--small-medium{ /* Figure small-medium */
-    width: 100%;
-    height: 14.687em;
-    margin: 0;
-    border: 0.125em solid #F2F2F2;
-    border-radius: 1.25em;
-    box-shadow: 0.125em 0.125em 0.125em #F2F2F2;
-    overflow: hidden;
-}
-.img-small-medium{ /* Bloc img small-medium */
-    width: 100%;
-    height: 11.25em;
-}
-.--small-small{ /* Figure small */
-    width: 100%;
-    height: 10.312em;
-    margin: 0;
-    border: 0.125em solid #F2F2F2;
-    border-radius: 1.25em;
-    box-shadow: 0.125em 0.125em 0.125em #F2F2F2;
-    overflow: hidden;
-}
-.img-small-small{ /* Bloc img small */
-    width: 100%;
-    height: 6.875em;
-} 
-.--medium{ /* Figure medium */
-    width: 100%;
-    height: 13.125em;
-    margin: 0;
-    border: 0.125em solid #F2F2F2;
-    border-radius: 1.25em;
-    box-shadow: 0.125em 0.125em 0.125em #F2F2F2;
-    overflow: hidden;
-}
-.img-medium{ /* Bloc img medium */
-    width: 100%;
-    height: 9.687em;
-}
-/* footer */
-footer{
-    background-color: #F2F2F2;
-    width: 100%;
-    height: 13.75em;
-}
-.--footer{
-    width: 90%;
-    margin: auto;
-}
-.--footer h2{
-    margin: 45px auto 25px;
-}
-.--footer .about ul li{
-    margin-bottom: 15px;
-}
-.about{
-    margin: 0 220px 0 0;
-}
-footer ul{
-    margin: 0;
-    padding: 0;
-}
+@media screen and (max-width: 767px) {
+    
 }
