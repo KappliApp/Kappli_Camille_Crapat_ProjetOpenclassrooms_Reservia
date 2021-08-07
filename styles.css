@@ -469,7 +469,7 @@ li{ /* suppression des puces sur les listes de la page */
     }
     .--activity{ /* Bloc réunissant la colone d'activité */
         width: 23%;
-        height: 27.813em;
+        height: 330px;
     }
     .--activity a, .--activity.small a{ /* Lien */
         width: 100%;
@@ -479,7 +479,7 @@ li{ /* suppression des puces sur les listes de la page */
     }
     .--activity-small{ /* Contener d'activité petit */
         width: 23%;
-        height: 27.813em;
+        height: 330px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -494,7 +494,7 @@ li{ /* suppression des puces sur les listes de la page */
     }
     .img-large{ /* Bloc img large */
         width: 100%;
-        height: 24.375em;
+        height: 285px;
     }
     .activity img{ /* toutes les images */
         width: 100%;
@@ -503,7 +503,7 @@ li{ /* suppression des puces sur les listes de la page */
     }
     .activity figcaption{ /* tous les figcaption */
         width: 100%;
-        height: 3.437em;
+        height: 45px;
         font-size: 0.875em;
         font-weight: bold;
         line-height: 3.437em;
@@ -511,7 +511,7 @@ li{ /* suppression des puces sur les listes de la page */
     }
     .medium{ /* Figure medium */
         width: 100%;
-        height: 14.687em;
+        height: 170px;
         margin: 0;
         border: 0.125em solid #F2F2F2;
         border-radius: 1.25em;
@@ -520,11 +520,11 @@ li{ /* suppression des puces sur les listes de la page */
     }
     .img-medium{ /* Bloc img medium */
         width: 100%;
-        height: 11.25em;
+        height: 125px;
     }
     .small{ /* Figure small */
         width: 100%;
-        height: 10.312em;
+        height: 130px;
         margin: 0;
         border: 0.125em solid #F2F2F2;
         border-radius: 1.25em;
@@ -533,7 +533,7 @@ li{ /* suppression des puces sur les listes de la page */
     }
     .img-small{ /* Bloc img small */
         width: 100%;
-        height: 6.875em;
+        height: 85px;
     }
     /* footer */
     footer{
@@ -547,10 +547,12 @@ li{ /* suppression des puces sur les listes de la page */
         justify-content: space-between;
     }
     .--footer h2{
+        font-size: 16px;
         margin: 45px auto 20px;
     }
     .--footer .about ul li{
         margin-bottom: 15px;
+        font-size: 12px;
     }
     .about{
         width: 28%;
