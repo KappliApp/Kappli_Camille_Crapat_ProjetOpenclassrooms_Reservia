@@ -406,7 +406,7 @@ li{ /* suppression des puces sur les listes de la page */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    header, nav ul, .search, .filter, .--filter, .--lodging, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
+    header, nav ul, .search, .filter, .--filter, .--lodging, .--popular, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     
@@ -451,6 +451,202 @@ li{ /* suppression des puces sur les listes de la page */
     li.register a{ /* Différentiation register */
         color: #0065FC;
         font-weight: bold;
+    }
+        /* Résultat de recherche */
+    .location{ /* Contener contenant lodging et popular */
+        width: 95%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .lodging{ /* Définition de la largeur du contener lodging */
+        width: 63%;
+    }
+    .lodging h2{ /* Gros titre lodging */
+        font-size: 1.375em;
+        margin: 2.5em 0 1.875em 1.875em;
+    }
+    .lodging h3{ /* Titre lodging */
+        font-size: 1.125em;
+        margin: 0 0 2.5em 1.875em;
+    }
+    .lodging, .popular{ /* contener lodging + popular */
+        background-color: #F2F2F2;
+        border-radius: 1.25em;
+    }
+    .--lodging{ /* sous-contener lodging contenant tous les logements */
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .--lodging a{ /* lien entourant les lodging figure */
+        display: inline-block;
+        width: 28%;
+    }
+    .--lodging a:hover{ /* agrandi le bloc au survol */
+        transform: scale(1.05);
+    }
+    .lodging-figure{ /* bloc unitaire contenant image + texte de chaque logement */
+        background-color: #fff;
+        width: 100%;
+        height: 12.5em;
+        margin: 0 auto 2.5em auto;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #cbcbcb;
+        overflow: hidden;
+    }
+    .img-lodging{ /* Bloc contenant l'image du logement */
+        width: 97%;
+        height: 7.188em;
+        overflow: hidden;
+        margin: 0.313em auto 0 auto;
+        border-radius: 1.25em 1.25em 0 0;
+    }
+    .img-lodging img{ /* Paramètre de l'image */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .lodging-figure p, .popular-figure p{ /* Paramètre paragraphe lodging et popular */
+        font-size: 12px;
+        margin: 0.312em 0;
+    }
+    .lodging-figure h3, .popular h3{ /* Paramètre titre lodging et popular */
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0.312em 0;
+    }
+    .lodging-figure figcaption{ /* Paramètre texte en dessous des images de logements */
+        width: 92%;
+        height: 5em;
+        margin: auto;
+    }
+    .fas.fa-star{ /* étoile de notation */
+        color: #0065FC;
+        font-size: 12px;
+    }
+    .fas.fa-star.star-gray{ /* étoile de notation grisé */
+        color: #F2F2F2;
+    }
+    /* Résultat de recherche */
+    .location{ /* Contener contenant lodging et popular */
+        width: 95%;
+        margin: auto;
+    }
+    .lodging{ /* Définition de la largeur du contener lodging */
+        width: 100%;
+    }
+    .lodging h2{ /* Gros titre lodging */
+        font-size: 1.375em;
+        margin: 2.5em 0 1.875em 1.875em;
+    }
+    .lodging h3{ /* Titre lodging */
+        font-size: 1.125em;
+        margin: 0 0 2.5em 1.875em;
+    }
+    .lodging, .popular{ /* contener lodging + popular */
+        background-color: #F2F2F2;
+        border-radius: 1.25em;
+    }
+    .--lodging{ /* sous-contener lodging contenant tous les logements */
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .--lodging a{ /* lien entourant les lodging figure */
+        display: inline-block;
+        width: 28%;
+    }
+    .-lodging a:hover{ /* agrandi le bloc au survol */
+        transform: scale(1.05);
+    }-
+    .lodging-figure{ /* bloc unitaire contenant image + texte de chaque logement */
+        background-color: #fff;
+        width: 100%;
+        height: 12.5em;
+        margin: 0 auto 2.5em auto;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #cbcbcb;
+        overflow: hidden;
+    }
+    .img-lodging{ /* Bloc contenant l'image du logement */
+        width: 97%;
+        height: 7.188em;
+        overflow: hidden;
+        margin: 0.313em auto 0 auto;
+        border-radius: 1.25em 1.25em 0 0;
+    }
+    .img-lodging img{ /* Paramètre de l'image */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .lodging-figure p, .popular-figure p{ /* Paramètre paragraphe lodging et popular */
+        font-size: 12px;
+        margin: 0.312em 0;
+    }
+    .lodging-figure h3, .popular h3{ /* Paramètre titre lodging et popular */
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0.312em 0;
+    }
+    .lodging-figure figcaption{ /* Paramètre texte en dessous des images de logements */
+        width: 92%;
+        height: 5em;
+        margin: auto;
+    }
+    .fas.fa-star{ /* étoile de notation */
+        color: #0065FC;
+        font-size: 12px;
+    }
+    .fas.fa-star.star-gray{ /* étoile de notation grisé */
+        color: #F2F2F2;
+    }
+
+/* Les plus populaires */
+    .popular{
+        width: 100%;
+    }
+    .popular h2{ /* Paramètre titre popular */
+        font-size: 1.375em;
+        margin: 2.5em 0 1.875em 1.875em;
+    }
+    .--popular{
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .--popular a{
+        display: inline-block;
+        width: 28%;
+    }
+    .popular a:hover{
+        transform: scale(1.05);
+    }
+    .popular-figure{
+        background-color: #fff;
+        width: 100%;
+        height: 12.5em;
+        margin: 0 auto 2.5em auto;
+        border-radius: 1.25em;
+        box-shadow: 0px 6px 6px #cbcbcb;
+        overflow: hidden;
+    }
+    .img-popular{
+        width: 97%;
+        height: 7.188em;
+        overflow: hidden;
+        margin: 0.313em auto 0 auto;
+        border-radius: 1.25em 1.25em 0 0;
+    }
+    .img-popular img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .popular-figure figcaption{
+        width: 92%;
+        height: 5em;
+        margin: auto;
     }
         /* Les Activités */
     .activity{ /* Contener activité */
