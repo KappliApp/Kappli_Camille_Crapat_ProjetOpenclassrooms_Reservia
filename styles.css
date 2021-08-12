@@ -146,6 +146,10 @@ li{ /* suppression des puces sur les listes de la page */
         font-weight: bold;
         margin: 0 1.5625em 0 0;
     }
+    .filter-bloc{
+        display: flex;
+        flex-wrap: wrap;
+    }
     .--filter:hover{
         background-color: #DEEBFF;
         cursor: pointer;
@@ -425,7 +429,7 @@ li{ /* suppression des puces sur les listes de la page */
         width: 100%;
     }
     nav{ /* Définition de la taille du menu */
-        width: 33%;
+        width: 45%;
         height: 6.25em;
     }
     nav ul{ /* Suppression de la marge et du padding */
@@ -451,6 +455,114 @@ li{ /* suppression des puces sur les listes de la page */
     li.register a{ /* Différentiation register */
         color: #0065FC;
         font-weight: bold;
+    }
+
+        /* Filtre + Recherche */ 
+    .search-filter{ /* contener Filtre + Recherche */
+        width: 95%;
+        margin: auto;
+    }
+    .search-filter h1{ /* titre contener */
+        margin: 0;
+    }
+    .search-filter p{ /* paragraphe contener */
+        margin: 0.625em 0 1.562em 0;
+    }
+    /* Recherche */
+    .search{ /* contener recherche */
+        width: 100%;
+        margin: auto;
+    }
+    .map{ /* contener icône map */
+        background-color: #F2F2F2;
+        width: 10%;
+        height: 3.125em;
+        border-radius: 0.625em 0 0 0.625em;
+        text-align: center;
+    }
+    .map p{ /* paragraphe icône map */
+        margin: 0;
+        line-height: 3.125em;
+    }
+    .fas.fa-map-marker-alt{ /* icône map */
+        font-size: 1.125em; 
+    }
+    form{ /* définition taille formulaire */
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+    .--search{ /* input recherche */
+        width: 60%;
+        height: 3.125em;
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        border: 0px;  
+        font-weight: bold;
+        font-size: 1.125em;
+    }
+    .button-search{ /* boutton recherche */
+        background-color: #0065FC;
+        width: 35%;
+        height: 3.125em;
+        margin: 0;
+        padding: 0;
+        border-radius: 0 0.625em 0.625em 0; 
+        border: 0px ;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .button-search:hover{ /* paramètre survol boutton recherche */
+        cursor: pointer;
+    }
+    /* Filtre */
+    .filter{ /* contener filtre */
+        margin: 1.875em 0 2.5em 0;
+    }
+    .filter-bloc{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filter h2{ /* titre contener */
+        margin : auto 1.875em auto 0;
+    }
+    .--filter{ /* sous contener filtre */
+        height: 3.125em;
+        border-radius: 3.125em 3.125em 3.125em 3.125em;
+        border-top: 0.125em #F2F2F2 solid;
+        border-right: 0.125em #F2F2F2 solid;
+        border-bottom: 0.125em #F2F2F2 solid;
+        font-weight: bold;
+        margin: 10px 1.5625em 0 0;
+    }
+    .--filter:hover{
+        background-color: #DEEBFF;
+        cursor: pointer;
+    }
+    .filter-img{ /* contener rond contenant icône */
+        background-color: #DEEBFF;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        text-align: center;
+    }
+    .--filter .filter-img p{ /* paragraphe icône */
+        margin: auto;
+    }
+    .filter-img .fas{ /* icône */
+        color: #0065FC;
+        line-height: 3.125em;
+    }
+    .--filter p{ /* paragraphe icône et texte */
+        margin: auto 1.25em auto 0.725em;
+    }
+    p.info{ /* paragraphe info */
+        margin: 0.625em 0 2.5em 0;
+    }
+    .fas.fa-info-circle{ /* icône info */
+        color: #0065FC;
     }
         /* Résultat de recherche */
     .location{ /* Contener contenant lodging et popular */
@@ -558,7 +670,7 @@ li{ /* suppression des puces sur les listes de la page */
     }
     .-lodging a:hover{ /* agrandi le bloc au survol */
         transform: scale(1.05);
-    }-
+    }
     .lodging-figure{ /* bloc unitaire contenant image + texte de chaque logement */
         background-color: #fff;
         width: 100%;
