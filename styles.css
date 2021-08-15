@@ -127,7 +127,7 @@ form{ /* définition taille formulaire */
     display: none;
 }
  /* Filtre */
- .filter{ /* contener filtre */
+.filter{ /* contener filtre */
     margin: 1.875em 0 2.5em 0;
 }
 .filter-bloc{
@@ -167,9 +167,7 @@ form{ /* définition taille formulaire */
 .--filter p{ /* paragraphe icône et texte */
     margin: auto 1.25em auto 0.725em;
 }
-p.info{ /* paragraphe info */
-    margin: 0.625em 0 2.5em 0;
-}
+
 .fas.fa-info-circle{ /* icône info */
     color: #0065FC;
 }
@@ -284,7 +282,6 @@ p.info{ /* paragraphe info */
 .bloc-activity{ /* Bloc réunissant toutes les activités */
     width: 100%;
     margin: 0 0 3.75em 0;
-    display: flex;
     justify-content: space-between;
 }
 .--activity{ /* Bloc réunissant la colone d'activité */
@@ -306,7 +303,6 @@ p.info{ /* paragraphe info */
 }
 .--activity-small{ /* Contener d'activité petit */
     width: 23%;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -372,7 +368,7 @@ footer ul{
     padding: 0;
 }
 @media screen and (min-width: 1280px) {
-    header, nav, nav ul, .search, .filter, .--filter, .location, .--lodging, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .--activity-small, .--filter, .location, .--lodging, .--activity, .bloc-activity, .--footer { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     nav{ /* Définition de la taille du menu */
@@ -386,6 +382,9 @@ footer ul{
     }
     form{ /* définition taille formulaire */
         width: 88%;
+    }
+    p.info{ /* paragraphe info */
+        margin: 0.625em 0 2.5em 0;
     }
     .lodging{ /* Définition de la largeur du contener lodging */
         width: 63%;
@@ -449,7 +448,7 @@ footer ul{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    header, nav, nav ul, .search, .filter, .--filter, .--lodging, .--popular, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .--filter, .--lodging, .--popular, .--activity, .--activity-small, .bloc-activity, .--footer { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     
@@ -472,8 +471,9 @@ footer ul{
     form{ /* définition taille formulaire */
         width: 90%;
     }
-   
-   
+    p.info{ /* paragraphe info */
+        margin: 0.4em 0 0.4em 0;
+    }
         /* Résultat de recherche */
    
   
@@ -555,6 +555,10 @@ footer ul{
         flex-wrap: wrap;
         height: 200px;
     }
+    .search-filter{
+        width: 90%;
+        margin: auto;
+    }
     .logo{
         width: 50%;
     }
@@ -619,12 +623,15 @@ footer ul{
     .--lodging{
         display: inherit;
         flex-wrap: inherit;
+        padding-bottom: 20px;
     }
     .--lodging a{
         width: 95%;
+        margin: auto;
     }
-    .--lodging-figure{
+    .lodging-figure{
         width: 100%;
+        margin: 0 auto 0.90em auto;
     }
     form{
         width: 88%;
@@ -648,5 +655,8 @@ footer ul{
         color: #fff;
         font-weight: bold;
         font-size: 1em;
+    }
+    p.info{ /* paragraphe info */
+        margin: 0.4em 0 1.2em 0;
     }
 }
