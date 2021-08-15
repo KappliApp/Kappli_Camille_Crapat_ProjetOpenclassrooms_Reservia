@@ -659,4 +659,14 @@ footer ul{
     p.info{ /* paragraphe info */
         margin: 0.4em 0 1.2em 0;
     }
+    .--activity, .--activity-small{
+        width: 95%;
+    }
+    .large, .medium, .small{
+        height: 12.5em;
+        margin: 0 auto 0.90em auto;
+    }
+    .img-large, .img-medium, .img-small{
+        height: 9.5em;
+    }
 }
