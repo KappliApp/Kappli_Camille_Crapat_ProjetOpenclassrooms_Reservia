@@ -44,8 +44,8 @@ nav ul{ /* Suppression de la marge et du padding */
     margin: 0;
     padding: 0;
 }
-nav ul li{ /* réglage bloc li menu */
-    width: 33%;
+nav li{ /* réglage bloc li menu */
+    width: 50%;
     height: 6.25em;
     text-align: center;
     margin: auto;
@@ -53,7 +53,7 @@ nav ul li{ /* réglage bloc li menu */
 nav ul li:hover{ /* ajout d'une bordure au survol de li */
     border-top: 0.125em #0065FC solid;
 }
-nav ul li a{  /* Centrer verticalement les liens du menu */
+nav li a{  /* Centrer verticalement les liens du menu */
     display: inline-block;
     width: 100%;
     height: 6.25em;
@@ -63,6 +63,12 @@ nav ul li a{  /* Centrer verticalement les liens du menu */
 li.register a{ /* Différentiation register */
     color: #0065FC;
     font-weight: bold;
+}
+.--nav{
+    width: 70%;
+}
+.--nav-register{
+    width: 30%;
 }
 /* Filtre + Recherche */ 
 .search-filter{ /* contener Filtre + Recherche */
@@ -363,7 +369,7 @@ footer ul{
     padding: 0;
 }
 @media screen and (min-width: 1280px) {
-    header, nav ul, .search, .filter, .--filter, .location, .--lodging, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .--filter, .location, .--lodging, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     nav{ /* Définition de la taille du menu */
@@ -440,7 +446,7 @@ footer ul{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    header, nav ul, .search, .filter, .--filter, .--lodging, .--popular, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .--filter, .--lodging, .--popular, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     
@@ -539,18 +545,82 @@ footer ul{
 }
 
 @media screen and (max-width: 767px) {
-    header, .search, .--filter, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .--filter { /* Mise en place de flex sur les différents contener */
         display: flex;
+    }
+    header{
+        flex-wrap: wrap;
+        height: 200px;
+    }
+    .logo{
+        width: 50%;
+    }
+    .logo img{
+        width: 60%;
+    }
+    nav{
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    nav ul{
+        width: 100%;
+    }
+    .--nav{
+        order : 2;
+    }
+    .--nav-register{
+        width: 100%;
+        order: 1;
+    }
+    .map{
+        width: 15%;
     }
     .location{
         display: flex;
         flex-direction: column;
     }
     .popular{
+        width: 100%;
         order: 1;
+        padding-bottom: 20px;
+        border-radius: inherit;
+    }
+    .--popular{ /* Particularité --popular vue PC */
+        width: 90%;
+        margin: auto auto 0 auto;
+        padding: 0;
+    }
+    .--popular a{ /* Définition taille lien popiular */
+        width: 100%;
+    }
+    .popular-figure{
+        height: 9.062em;
+        display: flex;
+        margin: 0 auto 0.90em auto;
+    }
+    .img-popular{
+        width: 40%;
+        height: 8.437em;
+        margin: 0.312em 0 0.312em 0.312em;
+        border-radius: 1.25em 0 0 1.25em;
+    }
+    
+    .popular-figure figcaption{
+        width: 60%;
+        margin: 1.25em;
     }
     .lodging{
         order: 2;
         background-color: inherit;
+    }
+    .--lodging{
+        display: inherit;
+        flex-wrap: inherit;
+    }
+    .--lodging a{
+        width: 95%;
+    }
+    .--lodging-figure{
+        width: 100%;
     }
 }
