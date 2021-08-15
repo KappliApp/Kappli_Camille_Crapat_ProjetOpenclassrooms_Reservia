@@ -123,6 +123,9 @@ form{ /* définition taille formulaire */
 .button-search:hover{ /* paramètre survol boutton recherche */
     cursor: pointer;
 }
+.button-search-mobile{
+    display: none;
+}
  /* Filtre */
  .filter{ /* contener filtre */
     margin: 1.875em 0 2.5em 0;
@@ -545,7 +548,7 @@ footer ul{
 }
 
 @media screen and (max-width: 767px) {
-    header, nav, nav ul, .search, .--filter { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, form, .search, .--filter { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     header{
@@ -573,7 +576,7 @@ footer ul{
         order: 1;
     }
     .map{
-        width: 15%;
+        width: 12%;
     }
     .location{
         display: flex;
@@ -622,5 +625,28 @@ footer ul{
     }
     .--lodging-figure{
         width: 100%;
+    }
+    form{
+        width: 88%;
+    }
+    .--search{
+        width: 85%;
+        line-height: 3.125em;
+    }
+    .button-search{
+        display: none;
+    }
+    .button-search-mobile{
+        display: block;
+        background-color: #0065FC;
+        width: 15%;
+        height: 3.125em;
+        margin: 0;
+        padding: 0;
+        border-radius: 0.625em 0.625em 0.625em 0.625em; 
+        border: 0px ;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1em;
     }
 }
