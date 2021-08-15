@@ -539,5 +539,18 @@ footer ul{
 }
 
 @media screen and (max-width: 767px) {
-    
+    header, .search, .--filter, .--activity, .--footer { /* Mise en place de flex sur les différents contener */
+        display: flex;
+    }
+    .location{
+        display: flex;
+        flex-direction: column;
+    }
+    .popular{
+        order: 1;
+    }
+    .lodging{
+        order: 2;
+        background-color: inherit;
+    }
 }
