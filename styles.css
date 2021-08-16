@@ -180,11 +180,9 @@ form{ /* définition taille formulaire */
 
 .lodging h2{ /* Gros titre lodging */
     font-size: 1.375em;
-    margin: 2.5em 0 1.875em 1.875em;
 }
 .lodging h3{ /* Titre lodging */
     font-size: 1.125em;
-    margin: 0 0 2.5em 1.875em;
 }
 .lodging, .popular{ /* contener lodging + popular */
     background-color: #F2F2F2;
@@ -246,7 +244,6 @@ form{ /* définition taille formulaire */
 }
 .popular h2{ /* Paramètre titre popular */
     font-size: 1.375em;
-    margin: 2.5em 0 1.875em 1.875em;
 }
 .--popular a{
     display: inline-block;
@@ -388,13 +385,27 @@ footer ul{
     }
     .lodging{ /* Définition de la largeur du contener lodging */
         width: 63%;
-    }   
+        padding: 20px 0 20px 0;
+    }
+    .lodging h2{
+        margin-left: 20px;
+    }
+    .lodging h3{
+        margin-left: 20px;
+    }
+    .--lodging{
+        margin-top: 40px;
+    }
     .popular{ /* Défition taille popular */
         width: 33%;
+        padding: 20px 0 20px 0;
+    }
+    .popular h2{
+        margin-left: 20px;
     }
     .--popular{ /* Particularité --popular vue PC */
         width: 80%;
-        margin: auto auto 0 auto;
+        margin: 40px auto 0 auto;
         padding: 0;
     }
     .--popular a{ /* Définition taille lien popiular */
@@ -472,7 +483,7 @@ footer ul{
         width: 90%;
     }
     p.info{ /* paragraphe info */
-        margin: 0.4em 0 0.4em 0;
+        margin: 0.4em 0 2em 0;
     }
         /* Résultat de recherche */
    
@@ -481,17 +492,32 @@ footer ul{
     
     .lodging{ /* Définition de la largeur du contener lodging */
         width: 100%;
+        padding: 15px 0 15px 0;
     }
-
+    .lodging h2{
+        margin-left: 20px;
+    }
+    .lodging h3{
+        margin-left: 20px;
+    }
+    .--lodging{
+        margin-top: 30px;
+    }
+    
 /* Les plus populaires */
     .popular{
         width: 100%;
+        padding: 20px 0 20px 0;
+        margin-top: 30px;
     }
-   
+    .popular h2{
+        margin-left: 20px;
+    }
     .--popular{
         width: 100%;
         justify-content: space-around;
         flex-wrap: wrap;
+        margin-top: 30px;
     }
     .--popular a{
         width: 28%;
@@ -586,16 +612,21 @@ footer ul{
         display: flex;
         flex-direction: column;
     }
+   
+    .popular h2{
+        margin-left: 10px;
+    }
     .popular{
         width: 100%;
         order: 1;
-        padding-bottom: 20px;
+        padding: 20px 0 20px 0;
         border-radius: inherit;
     }
     .--popular{ /* Particularité --popular vue PC */
         width: 90%;
         margin: auto auto 0 auto;
         padding: 0;
+        margin-top: 30px;
     }
     .--popular a{ /* Définition taille lien popiular */
         width: 100%;
@@ -619,6 +650,10 @@ footer ul{
     .lodging{
         order: 2;
         background-color: inherit;
+        padding: 15px 0 15px 0;
+    }
+    .lodging h2{
+        margin-left: 10px;
     }
     .--lodging{
         display: inherit;
@@ -633,6 +668,15 @@ footer ul{
         width: 100%;
         margin: 0 auto 0.90em auto;
     }
+    
+    .lodging h3{
+        margin-left: 10px;
+    }
+    .--lodging{
+        margin-top: 20px;
+    }
+    
+
     form{
         width: 88%;
     }
@@ -659,6 +703,9 @@ footer ul{
     p.info{ /* paragraphe info */
         margin: 0.4em 0 1.2em 0;
     }
+    .bloc-activity{
+        margin-top: 20px;
+    }
     .--activity, .--activity-small{
         width: 95%;
     }
@@ -668,5 +715,9 @@ footer ul{
     }
     .img-large, .img-medium, .img-small{
         height: 9.5em;
+    }
+    .activity h2{
+        margin:inherit;
+        margin-left: 10px;
     }
 }
