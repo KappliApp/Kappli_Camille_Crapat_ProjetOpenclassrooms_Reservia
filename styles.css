@@ -1,11 +1,11 @@
     /* ajout de la police */
 @font-face{ /* Ajout de la police Raleway Régular */
     font-family: Raleway;
-    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-regular.ttf");
+    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-medium.ttf");
 }
 @font-face{ /* Ajout de la police Raleway Bold */
     font-family: Raleway;
-    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-bold.ttf");
+    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-extrabold.ttf");
     font-weight: bold;
     
 }
@@ -123,7 +123,7 @@ form{ /* définition taille formulaire */
 .button-search:hover{ /* paramètre survol boutton recherche */
     cursor: pointer;
 }
-.button-search-mobile{
+.fas.fa-search{
     display: none;
 }
  /* Filtre */
@@ -684,11 +684,10 @@ footer ul{
         width: 85%;
         line-height: 3.125em;
     }
-    .button-search{
+    .span-button-search{
         display: none;
     }
-    .button-search-mobile{
-        display: block;
+    .button-search{
         background-color: #0065FC;
         width: 15%;
         height: 3.125em;
@@ -699,6 +698,10 @@ footer ul{
         color: #fff;
         font-weight: bold;
         font-size: 1em;
+    }
+    .fas.fa-search{
+        display: initial;
+        
     }
     p.info{ /* paragraphe info */
         margin: 0.4em 0 1.2em 0;
