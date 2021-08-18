@@ -24,34 +24,42 @@ li{ /* suppression des puces sur les listes de la page */
 }
 
 /* header : logo et menu */
+header.header-smartphone{ /* Masque le menu smartphone */
+    display: none;
+}
 header{ /* Contener header */
     width: 95%;
     height: 6.25em;
     margin: auto;
     justify-content: space-between;
 }
-.logo{ /* bloc logo */
+.logo{ /* Contener logo */
     width: 7%;
     margin: auto 0;
 }
+
 .logo img{ /* réglage de la taille de l'image */
     width: 100%;
 }
-nav{
+nav{ /* hauteur menu */
     height: 6.25em;
 }
 nav ul{ /* Suppression de la marge et du padding */
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 nav li{ /* réglage bloc li menu */
-    width: 50%;
+    width: 33%;
     height: 6.25em;
     text-align: center;
     margin: auto;
 }
 nav ul li:hover{ /* ajout d'une bordure au survol de li */
     border-top: 0.125em #0065FC solid;
+}
+li.register:hover{
+    border: 0;
 }
 nav li a{  /* Centrer verticalement les liens du menu */
     display: inline-block;
@@ -61,15 +69,12 @@ nav li a{  /* Centrer verticalement les liens du menu */
     line-height: 6.25em;
 }
 li.register a{ /* Différentiation register */
+    display: inline-block;
+    margin: auto;
     color: #0065FC;
     font-weight: bold;
 }
-.--nav{
-    width: 70%;
-}
-.--nav-register{
-    width: 30%;
-}
+
 /* Filtre + Recherche */ 
 .search-filter{ /* contener Filtre + Recherche */
     width: 95%;
@@ -168,8 +173,18 @@ form{ /* définition taille formulaire */
     margin: auto 1.25em auto 0.725em;
 }
 
-.fas.fa-info-circle{ /* icône info */
+.i{ /* icône info */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #DEDEDE;
     color: #0065FC;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 3px;
+    margin-bottom: 3px;
+
 }
  /* Résultat de recherche */
  .location{ /* Contener contenant lodging et popular */
@@ -368,7 +383,7 @@ footer ul{
     header, nav, nav ul, .search, .filter, .--activity-small, .--filter, .location, .--lodging, .--activity, .bloc-activity, .--footer { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
-    nav{ /* Définition de la taille du menu */
+    nav{
         width: 33%;
     }
     .search{ /* Défintion taille recherche */
@@ -465,9 +480,10 @@ footer ul{
     
     /* header : logo et menu */
    
-    nav{ /* Définition de la taille du menu */
+    nav{
         width: 45%;
     }
+    
 
         /* Filtre + Recherche */ 
    
@@ -503,7 +519,7 @@ footer ul{
     .--lodging{
         margin-top: 30px;
     }
-    
+
 /* Les plus populaires */
     .popular{
         width: 100%;
@@ -574,40 +590,65 @@ footer ul{
 }
 
 @media screen and (max-width: 767px) {
-    header, nav, nav ul, form, .search, .--filter { /* Mise en place de flex sur les différents contener */
+    .header-smartphone, nav, nav ul, form, .search, .--filter { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     header{
-        flex-wrap: wrap;
-        height: 200px;
+        display: none;
     }
+    header.header-smartphone{
+        display: block;
+        height: 150px;
+    }
+    .nav-smartphone img{
+        width: 40%;
+        height: 75px;
+        object-fit: contain;
+        margin: 0;
+    }
+    .nav-smartphone{
+        width: 100%;
+        height: 125px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .nav-smartphone ul{
+        width: 100%;
+        height: 50px;
+        order: 2;
+    }
+    .nav-smartphone ul li{
+        width: 50%;
+        height: 50px;
+        margin: auto;
+        border-bottom: 3px solid #e5e4e4;
+    }
+    .nav-smartphone ul li:hover{
+        border: none;
+        border-bottom: 3px solid #0065FC;
+    }
+    .register{
+        order: 1;
+        margin: auto 20px auto 0;
+        color: #0065FC;
+        font-weight: bold;
+        text-align: center;
+    }
+    .nav-smartphone li a{  /* Centrer verticalement les liens du menu */
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        margin: auto;
+        line-height: 50px;
+    }
+
     .search-filter{
         width: 90%;
         margin: auto;
     }
-    .logo{
-        width: 50%;
-    }
-    .logo img{
-        width: 60%;
-    }
-    nav{
-        width: 50%;
-        flex-wrap: wrap;
-    }
-    nav ul{
-        width: 100%;
-    }
-    .--nav{
-        order : 2;
-    }
-    .--nav-register{
-        width: 100%;
-        order: 1;
-    }
-    .map{
-        width: 12%;
-    }
+    
+    
+    
     .location{
         display: flex;
         flex-direction: column;
@@ -651,14 +692,17 @@ footer ul{
         order: 2;
         background-color: inherit;
         padding: 15px 0 15px 0;
+        
     }
     .lodging h2{
         margin-left: 10px;
     }
     .--lodging{
-        display: inherit;
+        display: flex;
+        flex-direction: column;
         flex-wrap: inherit;
         padding-bottom: 20px;
+        align-items: center;
     }
     .--lodging a{
         width: 95%;
@@ -676,12 +720,14 @@ footer ul{
         margin-top: 20px;
     }
     
-
+    .map{
+        width: 15%;
+    }
     form{
-        width: 88%;
+        width: 85%;
     }
     .--search{
-        width: 85%;
+        width: 82%;
         line-height: 3.125em;
     }
     .span-button-search{
@@ -689,11 +735,11 @@ footer ul{
     }
     .button-search{
         background-color: #0065FC;
-        width: 15%;
+        width: 18%;
         height: 3.125em;
         margin: 0;
         padding: 0;
-        border-radius: 0.625em 0.625em 0.625em 0.625em; 
+        border-radius: 17px 17px 17px 17px; 
         border: 0px ;
         color: #fff;
         font-weight: bold;
@@ -708,6 +754,9 @@ footer ul{
     }
     .bloc-activity{
         margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .--activity, .--activity-small{
         width: 95%;
@@ -722,5 +771,15 @@ footer ul{
     .activity h2{
         margin:inherit;
         margin-left: 10px;
+    }
+    footer{
+        height: auto;
+        padding: 20px 0 20px 0;
+    }
+    .--footer h2{
+        margin: 25px auto 20px;
+    }
+    .about{
+        width: 100%;
     }
 }
