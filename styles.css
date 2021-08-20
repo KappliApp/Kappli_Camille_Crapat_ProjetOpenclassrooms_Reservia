@@ -414,7 +414,7 @@ footer ul{
 /* -----------------------------------------spécificité vue PC----------------------------------------------------------------------- */
 
 @media screen and (min-width: 1280px) {
-    header, nav, nav ul, .search, .filter, .activity---small, .filter--, .location, .lodging--, .popular-figure .activity--, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .activity---small, .filter--, .location, .lodging--, .popular-figure, .activity--, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     nav{ /* Spécificité Menu */
