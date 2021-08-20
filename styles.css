@@ -40,22 +40,21 @@ header{ /* Contener header */
     justify-content: space-between;
 }
 .logo{ /* Contener logo */
-    width: 7%;
     margin: auto 0;
 }
 .logo img{ /* réglage de la taille de l'image */
-    width: 100%;
+    width: 10%;
 }
 nav{ /* hauteur menu */
+    width: 100%;
     height: 6.25em;
 }
 nav ul{ /* Suppression de la marge et du padding et définition de la taille du menu */
-    width: 100%;
     margin: 0;
     padding: 0;
 }
 nav li{ /* réglage bloc li menu */
-    width: 33%;
+    width: 50%;
     height: 6.25em;
     text-align: center;
     margin: auto;
@@ -73,14 +72,15 @@ nav li a{  /* Centrer verticalement les liens du menu */
     margin: auto;
     line-height: 6.25em;
 }
-li.register:hover{ /* suppression des bordures sur register */
+.register:hover{ /* suppression des bordures sur register */
     border: 0;
 }
-li.register a{ /* Différentiation register */
+a.register { /* Différentiation register */
     display: inline-block;
     margin: auto;
     color: #0065FC;
     font-weight: bold;
+    text-align: center;
 }
 
 /* -----------------------------------------filtre + recherche---------------------------------------------------------------------- */
@@ -417,8 +417,14 @@ footer ul{
     header, nav, nav ul, .search, .filter, .activity---small, .filter--, .location, .lodging--, .popular-figure, .activity--, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
-    nav{ /* Spécificité Menu */
-        width: 33%;
+    .logo{
+        width: 67%;
+    }
+    nav ul{ /* Spécificité Menu */
+        width: 22%;
+    }
+    .register{
+        width: 11%;
     }
     .search{ /* Spécificité taille recherche */
         width: 30%;
@@ -514,8 +520,17 @@ footer ul{
     header, nav, nav ul, .search, .filter, .filter--, .location, .lodging--, .popular--, .activity--, .activity---small, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     } 
-    nav{
-        width: 45%;
+    .logo{
+        width: 55%;
+    }
+    .logo img{
+        width: 13%;
+    }
+    nav ul{ /* Spécificité Menu */
+        width: 30%;
+    }
+    .register{
+        width: 15%;
     }
     .search{ /* contener recherche */
         width: 100%;
@@ -628,40 +643,40 @@ footer ul{
 /* -----------------------------------------spécificité vue smartphone--------------------------------------------------------------- */
 
 @media screen and (max-width: 767px) {
-    .header-smartphone, nav, nav ul, form, .location, .popular-figure, .lodging--, .bloc-activity, .search, .filter-- { /* Mise en place de flex sur les différents contener */
+    .header, nav, nav ul, form, .location, .popular-figure, .lodging--, .bloc-activity, .search, .filter-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     header{
-        display: none;
-    }
-    header.header-smartphone{
-        display: block;
         height: 150px;
     }
-    .nav-smartphone img{
-        width: 30%;
+    .logo{
+        width: 50%;
         height: 65px;
+    }
+    .logo img{
+        width: 60%;
+        height: 100%;
         object-fit: contain;
         margin: 0;
     }
-    .nav-smartphone{
+    nav{
         width: 100%;
         height: 125px;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .nav-smartphone ul{
+    nav ul{
         width: 100%;
         height: 50px;
         order: 2;
     }
-    .nav-smartphone ul li{
+    nav ul li{
         width: 50%;
         height: 50px;
         margin: auto;
         border-bottom: 3px solid #e5e4e4;
     }
-    .nav-smartphone ul li:hover{
+    nav ul li:hover{
         border: none;
         border-bottom: 3px solid #0065FC;
     }
@@ -672,7 +687,7 @@ footer ul{
         font-weight: bold;
         text-align: center;
     }
-    .nav-smartphone li a{  /* Centrer verticalement les liens du menu */
+    nav li a{  /* Centrer verticalement les liens du menu */
         display: inline-block;
         width: 100%;
         height: 50px;
