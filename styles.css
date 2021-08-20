@@ -816,10 +816,23 @@ footer ul{
         height: auto;
         padding: 20px 0 20px 0;
     }
+    .--footer{
+        width: 95%;
+        margin: auto;
+        padding: 0 0 0 30px;
+    }
     .--footer h2{
+        font-size: 18px;
         margin: 25px auto 20px;
+    }
+    .--footer ul li a{
+        font-size: 15px;
     }
     .about{
         width: 100%;
+        margin-bottom: 10px;
+    }
+    .about ul li{
+        margin-bottom: 7px;
     }
 }
