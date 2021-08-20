@@ -211,6 +211,8 @@ form{ /* définition taille formulaire */
     justify-content: space-between;
 }
 
+/* -----------------------------------------hébergement à marseille----------------------------------------------------------------- */
+
 .lodging h2{ /* Gros titre lodging */
     font-size: 1.375em;
 }
@@ -255,11 +257,11 @@ form{ /* définition taille formulaire */
     object-fit: cover;
 }
 .lodging-figure p, .popular-figure p{ /* Paramètre paragraphe lodging et popular */
-    font-size: 12px;
+    font-size: 0.75em;
     margin: 0.312em 0;
 }
 .lodging-figure h3, .popular h3{ /* Paramètre titre lodging et popular */
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: bold;
     margin: 0.312em 0;
 }
@@ -270,25 +272,28 @@ form{ /* définition taille formulaire */
 }
 .fas.fa-star{ /* étoile de notation */
     color: #0065FC;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 .fas.fa-star.star-gray{ /* étoile de notation grisé */
     color: #F2F2F2;
 }
+
+/* -----------------------------------------les plus populaires--------------------------------------------------------------------- */
+
 .popular h2{ /* Paramètre titre popular */
     font-size: 1.375em;
 }
-.popular-- a{
+.popular-- a{ /* */
     display: inline-block;
 }
-.more-popular-star{
+.more-popular-star{ /* étoile de notation popular */
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 1.875em;
 }
-.popular a:hover{
+.popular a:hover{ /* grossissement au survol */
     transform: scale(1.05);
 }
-.popular-figure{
+.popular-figure{ /* bloc figure popular */
     background-color: #fff;
     width: 100%;
     margin: 0 auto 2.5em auto;
@@ -304,7 +309,9 @@ form{ /* définition taille formulaire */
     height: 100%;
     object-fit: cover;
 }
- /* Les Activités */
+
+/* -----------------------------------------les activités-------------------------------------------------------------------------- */
+
  .activity{ /* Contener activité */
     width: 95%;
     margin: auto;
@@ -377,7 +384,9 @@ form{ /* définition taille formulaire */
 .img-small{ /* Bloc img small */
     width: 100%;
 }
- /* footer */
+
+/* -----------------------------------------bas de page------------------------------------------------------------------------------ */
+
  footer{
     background-color: #F2F2F2;
     width: 100%;
@@ -505,7 +514,7 @@ footer ul{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    header, nav, nav ul, .search, .filter, .filter--, .lodging--, .popular--, .activity--, .activity---small, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .filter--, .location, .lodging--, .popular--, .activity--, .activity---small, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     
@@ -538,10 +547,15 @@ footer ul{
         }
   
     /* Résultat de recherche */
-    
+    .location{
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .lodging{ /* Définition de la largeur du contener lodging */
+        order: 2;
         width: 100%;
         padding: 15px 0 15px 0;
+        margin-top: 30px;
     }
     .lodging h2{
         margin-left: 20px;
@@ -562,9 +576,9 @@ footer ul{
     margin-top: 0;
 }
     .popular{
+        order: 1;
         width: 100%;
         padding: 20px 0 20px 0;
-        margin-top: 30px;
     }
     .popular h2{
         margin-left: 20px;
