@@ -58,6 +58,10 @@ nav li{ /* réglage bloc li menu */
 nav ul li:hover{ /* ajout d'une bordure au survol de li */
     border-top: 0.125em #0065FC solid;
 }
+nav ul li:hover a{
+    
+    color: #0065FC;
+}
 li.register:hover{
     border: 0;
 }
@@ -140,14 +144,15 @@ form{ /* définition taille formulaire */
     flex-wrap: wrap;
 }
 .filter h2{ /* titre contener */
+    font-size: 20px;
     margin : auto 1.875em auto 0;
 }
 .--filter{ /* sous contener filtre */
     height: 3.125em;
     border-radius: 3.125em 3.125em 3.125em 3.125em;
-    border-top: 0.125em #F2F2F2 solid;
-    border-right: 0.125em #F2F2F2 solid;
-    border-bottom: 0.125em #F2F2F2 solid;
+    border-top: 3px #F2F2F2 solid;
+    border-right: 3px #F2F2F2 solid;
+    border-bottom: 3px #F2F2F2 solid;
     font-weight: bold;
     margin: 10px 1.5625em 0 0;
 }
@@ -167,9 +172,10 @@ form{ /* définition taille formulaire */
 }
 .filter-img .fas{ /* icône */
     color: #0065FC;
-    line-height: 3.125em;
+    line-height: 50px;
 }
 .--filter p{ /* paragraphe icône et texte */
+    font-size: 18px;
     margin: auto 1.25em auto 0.725em;
 }
 
@@ -399,6 +405,9 @@ footer ul{
     form{ /* définition taille formulaire */
         width: 88%;
     }
+    .--filter p{ /* paragraphe icône et texte */
+        font-size: 18px;
+    }
     p.info{ /* paragraphe info */
         margin: 0.625em 0 2.5em 0;
     }
@@ -476,6 +485,9 @@ footer ul{
     .img-small{ /* Bloc img small */
         height: 6.875em;
     }
+    footer h2{
+        font-size: 20px;
+    }
    
     
 }
@@ -509,7 +521,9 @@ footer ul{
         margin: 0.4em 0 2em 0;
     }
         /* Résultat de recherche */
-   
+        .--filter p{ /* paragraphe icône et texte */
+            font-size: 16px;
+        }
   
     /* Résultat de recherche */
     
@@ -615,8 +629,8 @@ footer ul{
         height: 150px;
     }
     .nav-smartphone img{
-        width: 40%;
-        height: 75px;
+        width: 30%;
+        height: 65px;
         object-fit: contain;
         margin: 0;
     }
@@ -660,16 +674,22 @@ footer ul{
         width: 90%;
         margin: auto;
     }
-    
-    
+    .--filter{
+        margin: 10px 10px 0 0;
+    }
+    .--filter p{ /* paragraphe icône et texte */
+        font-size: 16px;
+        margin: auto 15px auto 10px;
+    }
     
     .location{
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
    
     .popular h2{
-        margin-left: 10px;
+        margin-left: 15px;
     }
     .popular{
         width: 100%;
@@ -703,6 +723,8 @@ footer ul{
         margin: 1.25em;
     }
     .lodging{
+        width: 95%;
+        margin: auto auto 20px auto;
         order: 2;
         background-color: inherit;
         padding: 15px 0 15px 0;
@@ -774,13 +796,14 @@ footer ul{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 35px;
     }
     .--activity, .--activity-small{
         width: 95%;
     }
     .large, .medium, .small{
         height: 12.5em;
-        margin: 0 auto 0.90em auto;
+        margin: 0 auto 1.4em auto;
     }
     .img-large, .img-medium, .img-small{
         height: 9.5em;
