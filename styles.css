@@ -1,4 +1,5 @@
-    /* ajout de la police */
+/* -----------------------------------------ajout de la police---------------------------------------------------------------------- */
+
 @font-face{ /* Ajout de la police Raleway Régular */
     font-family: Raleway;
     src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-medium.ttf");
@@ -9,13 +10,15 @@
     font-weight: bold;
     
 }
-/* paramètre généraux */ 
+
+/* -----------------------------------------paramètres généraux---------------------------------------------------------------------- */
+
 body{ /* réglage margin padding et font-family de la page */
     margin: 0;
     padding: 0;
     font-family: "Raleway";
 }
-a{ /* suppression text decoration et couleur lien */
+a{ /* suppression text decoration et couleur lien de la page */
     text-decoration: none;
     color: #000;
 }
@@ -23,8 +26,11 @@ li{ /* suppression des puces sur les listes de la page */
     list-style-type: none;
 }
 
-/* header : logo et menu */
-header.header-smartphone{ /* Masque le menu smartphone */
+/* -----------------------------------------paramètres communs à toutes les vues----------------------------------------------------- */
+
+/* -----------------------------------------header : logo et menu-------------------------------------------------------------------- */
+
+header.header-smartphone{ /* Masque le header smartphone */
     display: none;
 }
 header{ /* Contener header */
@@ -37,14 +43,13 @@ header{ /* Contener header */
     width: 7%;
     margin: auto 0;
 }
-
 .logo img{ /* réglage de la taille de l'image */
     width: 100%;
 }
 nav{ /* hauteur menu */
     height: 6.25em;
 }
-nav ul{ /* Suppression de la marge et du padding */
+nav ul{ /* Suppression de la marge et du padding et définition de la taille du menu */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -58,12 +63,8 @@ nav li{ /* réglage bloc li menu */
 nav ul li:hover{ /* ajout d'une bordure au survol de li */
     border-top: 0.125em #0065FC solid;
 }
-nav ul li:hover a{
-    
+nav ul li:hover a{ /* changement de couleur au survol */
     color: #0065FC;
-}
-li.register:hover{
-    border: 0;
 }
 nav li a{  /* Centrer verticalement les liens du menu */
     display: inline-block;
@@ -72,6 +73,9 @@ nav li a{  /* Centrer verticalement les liens du menu */
     margin: auto;
     line-height: 6.25em;
 }
+li.register:hover{ /* suppression des bordures sur register */
+    border: 0;
+}
 li.register a{ /* Différentiation register */
     display: inline-block;
     margin: auto;
@@ -79,7 +83,8 @@ li.register a{ /* Différentiation register */
     font-weight: bold;
 }
 
-/* Filtre + Recherche */ 
+/* -----------------------------------------filtre + recherche---------------------------------------------------------------------- */
+
 .search-filter{ /* contener Filtre + Recherche */
     width: 95%;
     margin: auto;
@@ -90,6 +95,9 @@ li.register a{ /* Différentiation register */
 .search-filter p{ /* paragraphe contener */
     margin: 0.625em 0 1.562em 0;
 }
+
+/* -----------------------------------------barre de recherche---------------------------------------------------------------------- */
+
 .map{ /* contener icône map */
     background-color: #F2F2F2;
     height: 3.125em;
@@ -107,13 +115,13 @@ form{ /* définition taille formulaire */
     margin: 0;
     padding: 0;
 }
-.--search{ /* input recherche */
+.search--{ /* input recherche */
     width: 60%;
     height: 3.125em;
     margin: 0;
     padding: 0;
-    padding-left: 10px;
-    border: 0px;  
+    padding-left: 0.625em;
+    border: none;  
     font-weight: bold;
     font-size: 1.125em;
 }
@@ -124,7 +132,7 @@ form{ /* définition taille formulaire */
     margin: 0;
     padding: 0;
     border-radius: 0 0.625em 0.625em 0; 
-    border: 0px ;
+    border: none;
     color: #fff;
     font-weight: bold;
     font-size: 1em;
@@ -132,10 +140,12 @@ form{ /* définition taille formulaire */
 .button-search:hover{ /* paramètre survol boutton recherche */
     cursor: pointer;
 }
-.fas.fa-search{
+.fas.fa-search{ /* Masquer bouton recherche mobile */
     display: none;
 }
- /* Filtre */
+
+/* -----------------------------------------filtre----------------------------------------------------------------------------------- */
+
 .filter{ /* contener filtre */
     margin: 1.875em 0 2.5em 0;
 }
@@ -144,19 +154,19 @@ form{ /* définition taille formulaire */
     flex-wrap: wrap;
 }
 .filter h2{ /* titre contener */
-    font-size: 20px;
+    font-size: 1.25em;
     margin : auto 1.875em auto 0;
 }
-.--filter{ /* sous contener filtre */
+.filter--{ /* sous contener filtre */
     height: 3.125em;
     border-radius: 3.125em 3.125em 3.125em 3.125em;
     border-top: 3px #F2F2F2 solid;
     border-right: 3px #F2F2F2 solid;
     border-bottom: 3px #F2F2F2 solid;
     font-weight: bold;
-    margin: 10px 1.5625em 0 0;
+    margin: 0.625em 1.5625em 0 0;
 }
-.--filter:hover{
+.filter--:hover{
     background-color: #DEEBFF;
     cursor: pointer;
 }
@@ -167,15 +177,15 @@ form{ /* définition taille formulaire */
     border-radius: 50px;
     text-align: center;
 }
-.--filter .filter-img p{ /* paragraphe icône */
+.filter-- .filter-img p{ /* paragraphe icône */
     margin: auto;
 }
 .filter-img .fas{ /* icône */
     color: #0065FC;
     line-height: 50px;
 }
-.--filter p{ /* paragraphe icône et texte */
-    font-size: 18px;
+.filter-- p{ /* paragraphe icône et texte */
+    font-size: 1.125em;
     margin: auto 1.25em auto 0.725em;
 }
 
@@ -192,7 +202,9 @@ form{ /* définition taille formulaire */
     margin-bottom: 3px;
 
 }
- /* Résultat de recherche */
+
+/* -----------------------------------------résultat de la recherche----------------------------------------------------------------- */
+
  .location{ /* Contener contenant lodging et popular */
     width: 95%;
     margin: auto;
@@ -209,16 +221,16 @@ form{ /* définition taille formulaire */
     background-color: #F2F2F2;
     border-radius: 1.25em;
 }
-.--lodging{ /* sous-contener lodging contenant tous les logements */
+.lodging--{ /* sous-contener lodging contenant tous les logements */
     width: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.--lodging a{ /* lien entourant les lodging figure */
+.lodging-- a{ /* lien entourant les lodging figure */
     display: inline-block;
     width: 28%;
 }
-.--lodging a:hover{ /* agrandi le bloc au survol */
+.lodging-- a:hover{ /* agrandi le bloc au survol */
     transform: scale(1.05);
 }
 .lodging-figure{ /* bloc unitaire contenant image + texte de chaque logement */
@@ -266,7 +278,7 @@ form{ /* définition taille formulaire */
 .popular h2{ /* Paramètre titre popular */
     font-size: 1.375em;
 }
-.--popular a{
+.popular-- a{
     display: inline-block;
 }
 .more-popular-star{
@@ -306,10 +318,10 @@ form{ /* définition taille formulaire */
     margin: 0 0 3.75em 0;
     justify-content: space-between;
 }
-.--activity{ /* Bloc réunissant la colone d'activité */
+.activity--{ /* Bloc réunissant la colone d'activité */
     width: 23%;
 }
-.--activity a, .--activity.small a{ /* Lien */
+.activity-- a, .activity--.small a{ /* Lien */
     width: 100%;
 }
 .activity a:hover{ /* Action au survol */
@@ -323,7 +335,7 @@ form{ /* définition taille formulaire */
     box-shadow: 0px 6px 6px #e5e4e4;
     overflow: hidden;
 }
-.--activity-small{ /* Contener d'activité petit */
+.activity---small{ /* Contener d'activité petit */
     width: 23%;
     flex-direction: column;
     justify-content: space-between;
@@ -371,15 +383,15 @@ form{ /* définition taille formulaire */
     width: 100%;
     height: 13.75em;
 }
-.--footer{
+.footer--{
     width: 90%;
     margin: auto;
     justify-content: space-between;
 }
-.--footer h2{
+.footer-- h2{
     margin: 45px auto 25px;
 }
-.--footer .about ul li{
+.footer-- .about ul li{
     margin-bottom: 15px;
 }
 .about{
@@ -390,7 +402,7 @@ footer ul{
     padding: 0;
 }
 @media screen and (min-width: 1280px) {
-    header, nav, nav ul, .search, .filter, .--activity-small, .--filter, .location, .--lodging, .--activity, .bloc-activity, .--footer { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .activity---small, .filter--, .location, .lodging--, .activity--, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     nav{
@@ -405,7 +417,7 @@ footer ul{
     form{ /* définition taille formulaire */
         width: 88%;
     }
-    .--filter p{ /* paragraphe icône et texte */
+    .filter-- p{ /* paragraphe icône et texte */
         font-size: 18px;
     }
     p.info{ /* paragraphe info */
@@ -424,7 +436,7 @@ footer ul{
     .lodging-figure h3{
         margin-left: 0;
     }
-    .--lodging{
+    .lodging--{
         margin-top: 40px;
     }
     .popular{ /* Défition taille popular */
@@ -434,12 +446,12 @@ footer ul{
     .popular h2{
         margin-left: 20px;
     }
-    .--popular{ /* Particularité --popular vue PC */
+    .popular--{ /* Particularité --popular vue PC */
         width: 80%;
         margin: 40px auto 0 auto;
         padding: 0;
     }
-    .--popular a{ /* Définition taille lien popiular */
+    .popular-- a{ /* Définition taille lien popiular */
         width: 100%;
     }
     .popular-figure{
@@ -459,11 +471,11 @@ footer ul{
     }
     
    
-    .--activity{ /* Bloc réunissant la colone d'activité */
+    .activity--{ /* Bloc réunissant la colone d'activité */
         height: 27.813em;
     }
    
-    .--activity-small{ /* Contener d'activité petit */
+    .activity---small{ /* Contener d'activité petit */
         height: 27.813em;
     }
     
@@ -493,7 +505,7 @@ footer ul{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    header, nav, nav ul, .search, .filter, .--filter, .--lodging, .--popular, .--activity, .--activity-small, .bloc-activity, .--footer { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .filter--, .lodging--, .popular--, .activity--, .activity---small, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     
@@ -521,7 +533,7 @@ footer ul{
         margin: 0.4em 0 2em 0;
     }
         /* Résultat de recherche */
-        .--filter p{ /* paragraphe icône et texte */
+        .filter-- p{ /* paragraphe icône et texte */
             font-size: 16px;
         }
   
@@ -540,7 +552,7 @@ footer ul{
     .lodging-figure h3{
         margin-left: 0;
     }
-    .--lodging{
+    .lodging--{
         margin-top: 30px;
     }
 
@@ -557,13 +569,13 @@ footer ul{
     .popular h2{
         margin-left: 20px;
     }
-    .--popular{
+    .popular--{
         width: 100%;
         justify-content: space-around;
         flex-wrap: wrap;
         margin-top: 30px;
     }
-    .--popular a{
+    .popular-- a{
         width: 28%;
     }
     .popular a:hover{
@@ -583,10 +595,10 @@ footer ul{
         height: 5em;
         margin: auto;
     }
-    .--activity{ /* Bloc réunissant la colone d'activité */
+    .activity--{ /* Bloc réunissant la colone d'activité */
         height: 330px;
     }
-    .--activity-small{ /* Contener d'activité petit */
+    .activity---small{ /* Contener d'activité petit */
         height: 330px;
     }
     .img-large{ /* Bloc img large */
@@ -609,16 +621,16 @@ footer ul{
     }
     /* footer */
   
-    .--footer h2{
+    .footer-- h2{
         font-size: 16px;
     }
-    .--footer .about ul li{
+    .footer-- .about ul li{
         font-size: 12px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .header-smartphone, nav, nav ul, form, .search, .--filter { /* Mise en place de flex sur les différents contener */
+    .header-smartphone, nav, nav ul, form, .search, .filter-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     header{
@@ -674,10 +686,10 @@ footer ul{
         width: 90%;
         margin: auto;
     }
-    .--filter{
+    .filter--{
         margin: 10px 10px 0 0;
     }
-    .--filter p{ /* paragraphe icône et texte */
+    .filter-- p{ /* paragraphe icône et texte */
         font-size: 16px;
         margin: auto 15px auto 10px;
     }
@@ -697,13 +709,13 @@ footer ul{
         padding: 20px 0 20px 0;
         border-radius: inherit;
     }
-    .--popular{ 
+    .popular--{ 
         width: 90%;
         margin: auto auto 0 auto;
         padding: 0;
         margin-top: 30px;
     }
-    .--popular a{ /* Définition taille lien popiular */
+    .popular-- a{ /* Définition taille lien popiular */
         width: 100%;
     }
     .popular-figure{
@@ -733,14 +745,14 @@ footer ul{
     .lodging h2{
         margin-left: 10px;
     }
-    .--lodging{
+    .lodging--{
         display: flex;
         flex-direction: column;
         flex-wrap: inherit;
         padding-bottom: 20px;
         align-items: center;
     }
-    .--lodging a{
+    .lodging-- a{
         width: 95%;
         margin: auto;
     }
@@ -755,7 +767,7 @@ footer ul{
     .lodging-figure h3{
         margin-left: 0;
     }
-    .--lodging{
+    .lodging--{
         margin-top: 20px;
     }
     
@@ -765,7 +777,7 @@ footer ul{
     form{
         width: 85%;
     }
-    .--search{
+    .search--{
         width: 82%;
         line-height: 3.125em;
     }
@@ -798,7 +810,7 @@ footer ul{
         align-items: center;
         margin-bottom: 35px;
     }
-    .--activity, .--activity-small{
+    .activity--, .activity---small{
         width: 95%;
     }
     .large, .medium, .small{
@@ -816,16 +828,16 @@ footer ul{
         height: auto;
         padding: 20px 0 20px 0;
     }
-    .--footer{
+    .footer--{
         width: 95%;
         margin: auto;
         padding: 0 0 0 30px;
     }
-    .--footer h2{
+    .footer-- h2{
         font-size: 18px;
         margin: 25px auto 20px;
     }
-    .--footer ul li a{
+    .footer-- ul li a{
         font-size: 15px;
     }
     .about{
