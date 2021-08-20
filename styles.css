@@ -387,85 +387,87 @@ form{ /* définition taille formulaire */
 
 /* -----------------------------------------bas de page------------------------------------------------------------------------------ */
 
- footer{
+ footer{ /* bas de page */
     background-color: #F2F2F2;
     width: 100%;
     height: 13.75em;
 }
-.footer--{
+.footer--{ /* sous contener footer */
     width: 90%;
     margin: auto;
     justify-content: space-between;
 }
-.footer-- h2{
-    margin: 45px auto 25px;
+.footer-- h2{ /* réglage titre footer */
+    margin: 2.8125em auto 1.5625em;
 }
-.footer-- .about ul li{
-    margin-bottom: 15px;
+.footer-- .about ul li{ /* Marge entre les lien */
+    margin-bottom: 0.9375em;
 }
-.about{
+.about{ 
     width: 28%;
 }
 footer ul{
     margin: 0;
     padding: 0;
 }
+
+/* -----------------------------------------spécificité vue PC----------------------------------------------------------------------- */
+
 @media screen and (min-width: 1280px) {
-    header, nav, nav ul, .search, .filter, .activity---small, .filter--, .location, .lodging--, .activity--, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .activity---small, .filter--, .location, .lodging--, .popular-figure .activity--, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
-    nav{
+    nav{ /* Spécificité Menu */
         width: 33%;
     }
-    .search{ /* Défintion taille recherche */
+    .search{ /* Spécificité taille recherche */
         width: 30%;
     }
-    .map{ /* Définition taille map */
+    .map{ /* Spécificité taille map */
         width: 12%;
     }
-    form{ /* définition taille formulaire */
+    form{ /* Spécificité taille formulaire */
         width: 88%;
     }
-    .filter-- p{ /* paragraphe icône et texte */
-        font-size: 18px;
+    .filter-- p{ /* Spécificité paragraphe icône et texte */
+        font-size: 1.125em;
     }
-    p.info{ /* paragraphe info */
+    p.info{ /* Spécificité paragraphe info */
         margin: 0.625em 0 2.5em 0;
     }
-    .lodging{ /* Définition de la largeur du contener lodging */
+    .lodging{ /* Spécificité du contener lodging */
         width: 63%;
-        padding: 20px 0 20px 0;
+        padding: 1.25em 0 1.25em 0;
     }
-    .lodging h2{
-        margin-left: 20px;
+    .lodging h2{ /* Spécificité titre lodging */
+        margin-left: 1.25em;
     }
-    .lodging h3{
-        margin-left: 20px;
+    .lodging h3{ /* Spécificité sous-titre lodging */
+        margin-left: 1.25em;
     }
-    .lodging-figure h3{
+    .lodging-figure h3{ /* Spécificité sous-titre figure */
         margin-left: 0;
     }
-    .lodging--{
-        margin-top: 40px;
+    .lodging--{ /* Spécificité sous bloc lodging */
+        margin-top: 2.5em;
     }
-    .popular{ /* Défition taille popular */
+    .popular{ /* Spécificité taille popular */
         width: 33%;
-        padding: 20px 0 20px 0;
+        padding: 1.25em 0 1.25em 0;
     }
-    .popular h2{
-        margin-left: 20px;
+    .popular h2{ /* Spécificité titre popular */
+        margin-left: 1.25em;
     }
-    .popular--{ /* Particularité --popular vue PC */
+    .popular--{ /* Spécificité --popular vue PC */
         width: 80%;
-        margin: 40px auto 0 auto;
+        margin: 2.5em auto 0 auto;
         padding: 0;
     }
-    .popular-- a{ /* Définition taille lien popiular */
+    .popular-- a{ /* Spécificité taille lien popiular */
         width: 100%;
     }
-    .popular-figure{
+    .popular-figure{ /* Spécificité popular figure */
         height: 9.062em;
-        display: flex;
     }
     .img-popular{
         width: 40%;
@@ -473,21 +475,16 @@ footer ul{
         margin: 0.312em 0 0.312em 0.312em;
         border-radius: 1.25em 0 0 1.25em;
     }
-    
     .popular-figure figcaption{
         width: 60%;
         margin: 1.25em;
     }
-    
-   
     .activity--{ /* Bloc réunissant la colone d'activité */
         height: 27.813em;
     }
-   
     .activity---small{ /* Contener d'activité petit */
         height: 27.813em;
     }
-    
     .img-large{ /* Bloc img large */
         height: 24.375em;
     }
@@ -507,27 +504,19 @@ footer ul{
         height: 6.875em;
     }
     footer h2{
-        font-size: 20px;
+        font-size: 1.25em;
     }
-   
-    
 }
+
+/* -----------------------------------------spécificité vue tablette----------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
     header, nav, nav ul, .search, .filter, .filter--, .location, .lodging--, .popular--, .activity--, .activity---small, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
-    }
-    
-    /* header : logo et menu */
-   
+    } 
     nav{
         width: 45%;
     }
-    
-
-        /* Filtre + Recherche */ 
-   
-    /* Recherche */
     .search{ /* contener recherche */
         width: 100%;
         margin: auto;
@@ -541,12 +530,9 @@ footer ul{
     p.info{ /* paragraphe info */
         margin: 0.4em 0 2em 0;
     }
-        /* Résultat de recherche */
-        .filter-- p{ /* paragraphe icône et texte */
-            font-size: 16px;
-        }
-  
-    /* Résultat de recherche */
+    .filter-- p{ /* paragraphe icône et texte */
+        font-size: 1em;
+    }
     .location{
         flex-direction: column;
         justify-content: space-between;
@@ -554,40 +540,38 @@ footer ul{
     .lodging{ /* Définition de la largeur du contener lodging */
         order: 2;
         width: 100%;
-        padding: 15px 0 15px 0;
-        margin-top: 30px;
+        padding: 0.9375em 0 0.9375em 0;
+        margin-top: 1.875em;
     }
     .lodging h2{
-        margin-left: 20px;
+        margin-left: 1.25em;
     }
     .lodging h3{
-        margin-left: 20px;
+        margin-left: 1.25em;
     }
     .lodging-figure h3{
         margin-left: 0;
     }
     .lodging--{
-        margin-top: 30px;
+        margin-top: 1.875em;
     }
-
-/* Les plus populaires */
-.more-popular-star{
-    display: inline-block;
-    margin-top: 0;
-}
+    .more-popular-star{
+        display: inline-block;
+        margin-top: 0;
+    }
     .popular{
         order: 1;
         width: 100%;
-        padding: 20px 0 20px 0;
+        padding: 1.25em 0 1.25em 0;
     }
     .popular h2{
-        margin-left: 20px;
+        margin-left: 1.25em;
     }
     .popular--{
         width: 100%;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-top: 30px;
+        margin-top: 1.875em;
     }
     .popular-- a{
         width: 28%;
@@ -610,41 +594,41 @@ footer ul{
         margin: auto;
     }
     .activity--{ /* Bloc réunissant la colone d'activité */
-        height: 330px;
+        height: 20.625em;
     }
     .activity---small{ /* Contener d'activité petit */
-        height: 330px;
+        height: 20.625em;
     }
     .img-large{ /* Bloc img large */
-        height: 285px;
+        height: 17.8125em;
     }
     .activity figcaption{ /* tous les figcaption */
-        height: 45px;
+        height: 2.8125em;
     }
     .medium{ /* Figure medium */
-        height: 170px;
+        height: 10.625em;
     }
     .img-medium{ /* Bloc img medium */
-        height: 125px;
+        height: 7.8125em;
     }
     .small{ /* Figure small */
-        height: 130px;
+        height: 8.125em;
     }
     .img-small{ /* Bloc img small */
-        height: 85px;
+        height: 5.3125em;
     }
-    /* footer */
-  
     .footer-- h2{
-        font-size: 16px;
+        font-size: 1em;
     }
     .footer-- .about ul li{
-        font-size: 12px;
+        font-size: 0.75em;
     }
 }
 
+/* -----------------------------------------spécificité vue smartphone--------------------------------------------------------------- */
+
 @media screen and (max-width: 767px) {
-    .header-smartphone, nav, nav ul, form, .search, .filter-- { /* Mise en place de flex sur les différents contener */
+    .header-smartphone, nav, nav ul, form, .location, .popular-figure, .lodging--, .bloc-activity, .search, .filter-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     header{
@@ -710,7 +694,6 @@ footer ul{
     
     .location{
         width: 100%;
-        display: flex;
         flex-direction: column;
     }
    
@@ -734,7 +717,6 @@ footer ul{
     }
     .popular-figure{
         height: 9.062em;
-        display: flex;
         margin: 0 auto 0.90em auto;
     }
     .img-popular{
@@ -760,7 +742,6 @@ footer ul{
         margin-left: 10px;
     }
     .lodging--{
-        display: flex;
         flex-direction: column;
         flex-wrap: inherit;
         padding-bottom: 20px;
@@ -819,7 +800,6 @@ footer ul{
     }
     .bloc-activity{
         margin-top: 20px;
-        display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 35px;
