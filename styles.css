@@ -679,7 +679,7 @@ footer ul{
         border: none;
         border-bottom: 3px solid #0065FC;
     }
-    .register{
+    a.register{
         order: 1;
         margin: auto 20px auto 0;
         color: #0065FC;
