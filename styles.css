@@ -199,7 +199,6 @@ form{ /* définition taille formulaire */
     text-align: center;
     font-size: 13px;
     padding-top: 3px;
-    margin-bottom: 3px;
 
 }
 
@@ -414,7 +413,7 @@ footer ul{
 /* -----------------------------------------spécificité vue PC----------------------------------------------------------------------- */
 
 @media screen and (min-width: 1280px) {
-    header, nav, nav ul, .search, .filter, .activity---small, .filter--, .location, .lodging--, .popular-figure, .activity--, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .info, .activity---small, .filter--, .location, .lodging--, .popular-figure, .activity--, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     .logo{
@@ -438,8 +437,8 @@ footer ul{
     .filter-- p{ /* Spécificité paragraphe icône et texte */
         font-size: 1.125em;
     }
-    p.info{ /* Spécificité paragraphe info */
-        margin: 0.625em 0 2.5em 0;
+    p.info--{ /* Spécificité paragraphe info */
+        margin: 0em 0.313em 2.5em 0;
     }
     .lodging{ /* Spécificité du contener lodging */
         width: 63%;
@@ -517,7 +516,7 @@ footer ul{
 /* -----------------------------------------spécificité vue tablette----------------------------------------------------------------- */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    header, nav, nav ul, .search, .filter, .filter--, .location, .lodging--, .popular--, .activity--, .activity---small, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
+    header, nav, nav ul, .search, .filter, .filter--, .info, .location, .lodging--, .popular--, .activity--, .activity---small, .bloc-activity, .footer-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     } 
     .logo{
@@ -542,8 +541,8 @@ footer ul{
     form{ /* définition taille formulaire */
         width: 90%;
     }
-    p.info{ /* paragraphe info */
-        margin: 0.4em 0 2em 0;
+    p.info--{ /* paragraphe info */
+        margin: 0em 0.313em 2em 0;
     }
     .filter-- p{ /* paragraphe icône et texte */
         font-size: 1em;
@@ -643,7 +642,7 @@ footer ul{
 /* -----------------------------------------spécificité vue smartphone--------------------------------------------------------------- */
 
 @media screen and (max-width: 767px) {
-    .header, nav, nav ul, form, .location, .popular-figure, .lodging--, .bloc-activity, .search, .filter-- { /* Mise en place de flex sur les différents contener */
+    .header, nav, nav ul, form, .info, .location, .popular-figure, .lodging--, .bloc-activity, .search, .filter-- { /* Mise en place de flex sur les différents contener */
         display: flex;
     }
     header{
@@ -810,8 +809,8 @@ footer ul{
         display: initial;
         
     }
-    p.info{ /* paragraphe info */
-        margin: 0.4em 0 1.2em 0;
+    p.info--{ /* paragraphe info */
+        margin: 0 0.313em 1.2em 0;
     }
     .bloc-activity{
         margin-top: 20px;
@@ -834,13 +833,13 @@ footer ul{
         margin-left: 10px;
     }
     footer{
+        width: 100%;
         height: auto;
         padding: 20px 0 20px 0;
     }
     .footer--{
-        width: 95%;
+        width: 90%;
         margin: auto;
-        padding: 0 0 0 30px;
     }
     .footer-- h2{
         font-size: 18px;
