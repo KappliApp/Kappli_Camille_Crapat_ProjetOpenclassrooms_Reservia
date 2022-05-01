@@ -41,29 +41,29 @@ qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en m
         <td>
             Bonjour ! </br>
 Je t’envoie les nouvelles maquettes desktop et mobiles du site Reservia. Le dossier comprend
-aussi les images. Voici quelques précisions qui te seront utiles pour l’intégration.
-Fonctionnalités
-Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ
+aussi les images. Voici quelques précisions qui te seront utiles pour l’intégration. </br>
+Fonctionnalités </br>
+- Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ
 de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En
-revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
-Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour
-l’instant les liens seront vides.
-Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent
-d’apparence au survol. Je te laisse décider de l’effet le plus approprié.
-Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener
-aux sections de la page.
-Contraintes techniques
-Je te fournis deux maquettes : l’une desktop et l’autre mobile. Le site devra également être
+revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel. </br>
+- Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour
+l’instant les liens seront vides. </br>
+- Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent
+d’apparence au survol. Je te laisse décider de l’effet le plus approprié. </br>
+- Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener
+aux sections de la page. </br>
+Contraintes techniques </br>
+- Je te fournis deux maquettes : l’une desktop et l’autre mobile. Le site devra également être
 adapté aux tablettes. Sur ce support, tu es libre de faire les adaptations nécessaires avec la
 mise en page, tant qu’aucun élément n’est coupé et que le texte a une taille suffisante. Je
-te laisse choisir les breakpoints appropriés.
-Comme je ne savais pas de quels tailles et formats d’image tu avais besoin, j’ai exporté les
+te laisse choisir les breakpoints appropriés. </br>
+- Comme je ne savais pas de quels tailles et formats d’image tu avais besoin, j’ai exporté les
 images en différents formats. Je te laisse choisir le format le plus adapté par rapport à la
-résolution et au temps de chargement.
-Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la charte sont le
-bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.
-La police du site est Raleway.
-Si tu as des questions n’hésite pas à m’écrire.
+résolution et au temps de chargement. </br>
+- Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la charte sont le
+bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2. </br>
+- La police du site est Raleway. </br>
+Si tu as des questions n’hésite pas à m’écrire. </br>
 Bonne journée!
         </td>
     </tr>
