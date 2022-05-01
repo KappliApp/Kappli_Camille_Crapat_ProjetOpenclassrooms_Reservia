@@ -11,7 +11,7 @@ designer UI.
 
 #### Les différentes maquettes : 
 ##### Maquette desktop : 
-![Maquette Desktop](https://www.kappli.eu/reservia/maquettes/Desktop.png)
+<img src="https://www.kappli.eu/reservia/maquettes/Desktop.png" alt="Maquette Desktop"/>
 
 ### stack utilisé :
 - HTML
