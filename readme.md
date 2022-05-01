@@ -9,12 +9,20 @@ peuvent également être filtrés par thématique, par exemple leur budget ou le
 Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc,
 designer UI.
 
-#### Les différentes maquettes : 
-##### - Maquette desktop : 
+#### Maquette Desktop : 
 <img src="maquette/Home - Desktop.png" alt="Maquette Desktop"/>
 
-##### - Maquette smartphone : 
-<img src="maquette/Home - Smartphone.png" alt="Maquette Desktop"/>
+Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La
+première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche
+qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
+
+<table>
+<tr>
+<td>
+Test
+</td>
+</tr>
+</table>
 
 ### stack utilisé :
 - HTML
