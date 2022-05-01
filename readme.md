@@ -10,8 +10,11 @@ Un nouveau design basé sur les principes du Material Design vient d’être pro
 designer UI.
 
 #### Les différentes maquettes : 
-##### Maquette desktop : 
+##### - Maquette desktop : 
 <img src="maquette/Home - Desktop.png" alt="Maquette Desktop"/>
+
+##### - Maquette smartphone : 
+<img src="maquette/Home - Smartphone.png" alt="Maquette Desktop"/>
 
 ### stack utilisé :
 - HTML
