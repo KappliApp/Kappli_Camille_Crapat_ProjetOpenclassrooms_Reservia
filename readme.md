@@ -39,7 +39,7 @@ qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en m
     </tr>
     <tr>
         <td>
-            Bonjour !
+            Bonjour ! </br>
 Je t’envoie les nouvelles maquettes desktop et mobiles du site Reservia. Le dossier comprend
 aussi les images. Voici quelques précisions qui te seront utiles pour l’intégration.
 Fonctionnalités
