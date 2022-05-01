@@ -121,6 +121,12 @@ Sarah
     </tr>
 </table>
 
-### stack utilisé :
+### Stack utilisée :
 - HTML
 - CSS 
+
+### Autres informations
+- Voir le résultat de ce projet : https://www.kappli.eu/reservia/
+- Profil linkedin : https://www.linkedin.com/in/camille-crapat-399816214/
+- Portfolio : https://www.kappli.eu
+- Github : https://github.com/KappliApp/
