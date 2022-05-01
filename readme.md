@@ -68,6 +68,58 @@ Bonne journée!
         </td>
     </tr>
 </table>
+</br>
+Vous vous plongez dans ce projet… Et commencez à vous poser quelques questions techniques
+sur l’intégration. Heureusement, votre manager rebondit sur l’échange de mails pour vous
+apporter des précisions !
+
+<table>
+    <tr>
+        <td>
+            De : Sarah
+        </td>
+    </tr>
+    <tr>
+        <td>
+            A : Camille
+        </td>
+    </tr>
+    <tr>
+        <td>
+            CC : Loïc
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Objet : RE - Intégration maquette Reservia
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Hello, </br></br>
+J’espère que les premiers éléments partagés par Loïc te semblent clairs ! Comme c’est ton
+premier projet avec nous et que tu es en stage, je voulais te guider un peu plus : </br>
+- N’utilise pas de framework ou pré-compilateur CSS pour ce projet (comme SASS par
+exemple) : comme tu démarres, je préfère que tu montes en compétences sur HTML et
+CSS et que tu apprennes à coder from scratch. On aimerait tester tes compétences làdessus
+! </br>
+- Je te recommande d'utiliser Visual Studio Code, plusieurs plugins pourront te simplifier la
+vie, par exemple Live Server ou Prettier. </br>
+- Tu peux intégrer les icônes Font Awesome en HTML ou CSS. Je te conseille fortement
+d’utiliser Flexbox mais tu peux aussi utiliser CSS Grid si tu veux. </br>
+- Ton code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte
+au validateur W3C HTML et CSS. </br>
+- Le site devra être compatible avec les dernières versions de Chrome et Firefox. </br>
+- Pense à séparer le HTML et le CSS et à organiser ton dossier de rendu. </br>
+- N’oublie pas de versionner ton code avec Git, et ce dès les premières lignes de code. C’est
+hyper important quand on travaille en équipe. Nous on utilise GitKraken comme client Git,
+c'est plus sympa qu'une console, mais tu fais comme tu veux. Ensuite il faut que tu
+déploies la page sur GitHub Pages ou GitLab Pages comme tu préfères. </br></br>
+À ta disposition pour en discuter ! </br>
+Sarah
+        </td>
+    </tr>
+</table>
 
 ### stack utilisé :
 - HTML
