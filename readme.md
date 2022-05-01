@@ -17,11 +17,56 @@ première étape consiste à intégrer la maquette responsive en HTML et CSS. Vo
 qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
 
 <table>
-<tr>
-<td>
-Test
-</td>
-</tr>
+    <tr>
+        <td>
+            De : Loïc 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            A : Camille
+        </td>
+    </tr>
+    <tr>
+        <td>
+            CC : Sarah
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Objet : Intégration maquette Reservia
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Bonjour !
+Je t’envoie les nouvelles maquettes desktop et mobiles du site Reservia. Le dossier comprend
+aussi les images. Voici quelques précisions qui te seront utiles pour l’intégration.
+Fonctionnalités
+Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ
+de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En
+revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
+Chaque carte d’hébergement ou d’activité devra être cliquable dans son intégralité. Pour
+l’instant les liens seront vides.
+Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent
+d’apparence au survol. Je te laisse décider de l’effet le plus approprié.
+Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener
+aux sections de la page.
+Contraintes techniques
+Je te fournis deux maquettes : l’une desktop et l’autre mobile. Le site devra également être
+adapté aux tablettes. Sur ce support, tu es libre de faire les adaptations nécessaires avec la
+mise en page, tant qu’aucun élément n’est coupé et que le texte a une taille suffisante. Je
+te laisse choisir les breakpoints appropriés.
+Comme je ne savais pas de quels tailles et formats d’image tu avais besoin, j’ai exporté les
+images en différents formats. Je te laisse choisir le format le plus adapté par rapport à la
+résolution et au temps de chargement.
+Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la charte sont le
+bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.
+La police du site est Raleway.
+Si tu as des questions n’hésite pas à m’écrire.
+Bonne journée!
+        </td>
+    </tr>
 </table>
 
 ### stack utilisé :
