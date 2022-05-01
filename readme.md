@@ -10,7 +10,12 @@ Un nouveau design basé sur les principes du Material Design vient d’être pro
 designer UI.
 
 #### Maquette Desktop : 
-<img src="maquette/Home - Desktop.png" alt="Maquette Desktop"/>
+
+https://www.kappli.eu/reservia/maquettes/Desktop.png
+
+#### Maquette Smartphone :
+
+https://www.kappli.eu/reservia/maquettes/Smartphone.png
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La
 première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche
