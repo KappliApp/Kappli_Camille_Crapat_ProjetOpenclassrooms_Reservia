@@ -11,11 +11,11 @@ designer UI.
 
 #### Maquette Desktop : 
 
-https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Reservia/maquettes/Réservia_Home_Desktop.png
+https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Reservia/maquettes/Réservia_Home_Desktop
 
 #### Maquette Smartphone :
 
-https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Reservia/maquettes/Réservia_Home_Smartphone.png
+https://data.kappli.eu/Kappli_Camille_Crapat_ProjetOpenclassrooms_Reservia/maquettes/Réservia_Home_Smartphone
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La
 première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche
