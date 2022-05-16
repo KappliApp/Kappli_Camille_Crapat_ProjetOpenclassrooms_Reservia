@@ -11,11 +11,11 @@ designer UI.
 
 #### Maquette Desktop : 
 
-https://www.kappli.eu/reservia/maquettes/Desktop.png
+https://data.kappli.eu/1 - Kappli_Camille_Crapat_ProjetOpenclassrooms_Reservia/maquettes/Réservia - Home - Desktop.png
 
 #### Maquette Smartphone :
 
-https://www.kappli.eu/reservia/maquettes/Smartphone.png
+https://data.kappli.eu/1 - Kappli_Camille_Crapat_ProjetOpenclassrooms_Reservia/maquettes/Réservia - Home - Smartphone.png
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La
 première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche
@@ -131,7 +131,7 @@ Sarah
 - CSS 
 
 ### Autres informations
-- Voir le résultat de ce projet : https://www.kappli.eu/reservia/
+- Voir le résultat de ce projet : https://www.reservia.kappli.eu/
 - Profil linkedin : https://www.linkedin.com/in/camille-crapat-399816214/
 - Portfolio : https://www.kappli.eu
 - Github : https://github.com/KappliApp/
