@@ -2,11 +2,11 @@
 
 @font-face{ /* Ajout de la police Raleway Régular */
     font-family: Raleway;
-    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-medium.ttf");
+    src: url("font/raleway-medium.ttf");
 }
 @font-face{ /* Ajout de la police Raleway Bold */
     font-family: Raleway;
-    src: url("https://daigerlittle.github.io/CamilleCrapat_2_19072021//font/raleway-extrabold.ttf");
+    src: url("font/raleway-extrabold.ttf");
     font-weight: bold;
     
 }
