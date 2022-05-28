@@ -62,7 +62,7 @@ aux sections de la page. </br></br>
 adapté aux tablettes. Sur ce support, tu es libre de faire les adaptations nécessaires avec la
 mise en page, tant qu’aucun élément n’est coupé et que le texte a une taille suffisante. Je
 te laisse choisir les breakpoints appropriés. </br>
-- Comme je ne savais pas de quels tailles et formats d’image tu avais besoin, j’ai exporté les
+- Comme je ne savais pas de quelles tailles et formats d’image tu avais besoin, j’ai exporté les
 images en différents formats. Je te laisse choisir le format le plus adapté par rapport à la
 résolution et au temps de chargement. </br>
 - Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la charte sont le
@@ -76,7 +76,7 @@ Bonne journée!
 </br>
 Vous vous plongez dans ce projet… Et commencez à vous poser quelques questions techniques
 sur l’intégration. Heureusement, votre manager rebondit sur l’échange de mails pour vous
-apporter des précisions !
+apporter des précisions !</br>
 
 <table>
     <tr>
@@ -106,7 +106,7 @@ J’espère que les premiers éléments partagés par Loïc te semblent clairs !
 premier projet avec nous et que tu es en stage, je voulais te guider un peu plus : </br>
 - N’utilise pas de framework ou pré-compilateur CSS pour ce projet (comme SASS par
 exemple) : comme tu démarres, je préfère que tu montes en compétences sur HTML et
-CSS et que tu apprennes à coder from scratch. On aimerait tester tes compétences làdessus
+CSS et que tu apprennes à coder from scratch. On aimerait tester tes compétences là-dessus
 ! </br>
 - Je te recommande d'utiliser Visual Studio Code, plusieurs plugins pourront te simplifier la
 vie, par exemple Live Server ou Prettier. </br>
@@ -130,8 +130,8 @@ Sarah
 - HTML
 - CSS 
 
-### Autres informations
+### Autres informations :
 - Voir le résultat de ce projet : https://www.reservia.kappli.eu/
-- Profil linkedin : https://www.linkedin.com/in/camille-crapat-399816214/
+- Profil Linkedin : https://www.linkedin.com/in/camille-crapat-399816214/
 - Portfolio : https://www.kappli.eu
-- Github : https://github.com/KappliApp/
+- GitHub : https://github.com/KappliApp/
