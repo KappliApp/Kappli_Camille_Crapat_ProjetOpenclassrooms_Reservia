@@ -76,7 +76,7 @@ Bonne journée!
 </br>
 Vous vous plongez dans ce projet… Et commencez à vous poser quelques questions techniques
 sur l’intégration. Heureusement, votre manager rebondit sur l’échange de mails pour vous
-apporter des précisions !</br>
+apporter des précisions !</br></br>
 
 <table>
     <tr>
